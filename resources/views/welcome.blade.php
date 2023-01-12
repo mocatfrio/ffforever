@@ -18,7 +18,7 @@
             </h1>
 
             <h4 class="font-proxima text-center font-weight-500 p-b-100 font-18">
-                We are under pressure!
+                We are under construction!
             </h4>
 
             <div class="flex-w flex-c-m cd100 p-b-33">

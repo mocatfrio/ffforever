@@ -2,520 +2,473 @@
 
 @section('title', 'Wedding Invitation')
 
+@section('custom_style')
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ asset('dgcom/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('dgcom/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('dgcom/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ asset('dgcom/css/bootstrap.min.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Carousel Start -->
+    <div id="header" class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{{ asset('img/foto12.jpg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3">
+                            <h4 class="title-line-1 mb-4 animated zoomIn">The
+                                Wedding of</h4>
+                            <h1 class="title-name animated zoomIn">Firda
+                                & Fuad</h1>
+                            <p class="font-open-sans text-white font-12 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
+                                Saudara / i</p>
+                            <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">Nama</h3>
+                            <div class="primary-white-button animated zoomIn">
+                                <a href='#s' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{{ asset('img/foto1.jpg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3">
+                            <h4 class="title-line-1 mb-4 animated zoomIn">The
+                                Wedding of</h4>
+                            <h1 class="title-name animated zoomIn">Firda
+                                & Fuad</h1>
+                            <p class="font-open-sans text-white font-14 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
+                                Saudara / i</p>
+                            <h3 class="font-now text-white font-20 p-b-30">Nama</h3>
+                            <div class="primary-white-button">
+                                <a href='' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{{ asset('img/foto2.jpg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3">
+                            <h4 class="title-line-1 mb-4 animated zoomIn">The
+                                Wedding of</h4>
+                            <h1 class="title-name animated zoomIn">Firda
+                                & Fuad</h1>
+                            <p class="font-open-sans text-white font-14 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
+                                Saudara / i</p>
+                            <h3 class="font-now text-white font-20 p-b-30">Nama</h3>
+                            <div class="primary-white-button">
+                                <a href='' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{{ asset('img/foto3.jpg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3">
+                            <h4 class="title-line-1 mb-4 animated zoomIn">The
+                                Wedding of</h4>
+                            <h1 class="title-name animated zoomIn">Firda
+                                & Fuad</h1>
+                            <p class="font-open-sans text-white font-12 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
+                                Saudara / i</p>
+                            <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">Nama</h3>
+                            <div class="primary-white-button animated zoomIn">
+                                <a href='#s' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Name -->
+    <div id="name" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 px-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                {{-- <h6 class="section-title bg-white text-center text-primary px-3 mb-3"></h6> --}}
+                <h1 class="font-now text-uppercase ls-2 font-20 mb-4 my-2">Bismillah</h1>
+                <p class="font-proxima-nova font-14 mb-0">"Dan di antara tanda-tanda (kebesaran)-Nya
+                    ialah Dia
+                    menciptakan
+                    pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan
+                    Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat
+                    tanda-tanda (kebesaran Allah) bagi kaum yang berpikir"<br> <b>(Ar-Rum: 21)</b>
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-center p-4">
+                        <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('img/hf.png') }}"
+                            alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h1 class="font-dancing-script font-30 mb-4">Hafara Firdausi, M.Kom.</h1>
+                                <p class="font-proxima-nova font-14 mb-0">Putri Pertama dari Bpk. Prof.
+                                    Dr. H. Wasis, M.Si.
+                                    & Ibu
+                                    Hj. Dyah
+                                    Kurniawati, S.Pd.</p>
+                            </div>
+                            <div class="team-social mt-5 pointer">
+                                <a href="https://www.linkedin.com/in/hafarafirdausi/" target="_blank"><i
+                                        class="fab fa-linkedin font-20 m-r-10"></i></a>
+                                <a href="https://www.instagram.com/haeeep/" target="_blank"><i
+                                        class="fab fa-instagram font-20 m-r-10"></i></a>
+                                <a href="https://github.com/mocatfrio/" target="_blank"><i
+                                        class="fab fa-github font-20"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-center p-4">
+                        <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('img/fd.png') }}"
+                            alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h1 class="font-dancing-script font-30 mb-4">Fuad Dary Rosyadi, M.Kom.</h1>
+                                <p class="font-proxima-nova font-14 mb-0">Putra Kedua dari Bpk. H.
+                                    Abdul
+                                    Hadi, S.Pd. & Ibu
+                                    Hj.
+                                    Siti Latifatin.</p>
+                            </div>
+                            <div class="team-social mt-5 pointer">
+                                <a href="https://www.linkedin.com/in/fuaddary/" target="_blank"><i
+                                        class="fab fa-linkedin font-20 m-r-10"></i></a>
+                                <a href="https://www.instagram.com/tinkerspace.dev/" target="_blank"><i
+                                        class="fab fa-instagram font-20 m-r-10"></i></a>
+                                <a href="https://github.com/fuaddary" target="_blank"><i
+                                        class="fab fa-github font-20"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Name End -->
+
+    <!-- Date Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-12 text-center mb-5 px-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="font-now text-uppercase ls-2 font-20 mb-4 my-2">Save the Date</h1>
+                    <h6 class="section-title font-15 bg-white text-center text-primary px-3 mb-3">Sabtu, 11 Februari 2023
+                    </h6>
+                    <div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
+                        <div class="flex-w flex-c-m cd100">
+                            <div class="flex-col-c-m circle circle-primary m-l-15 m-r-15 m-b-20">
+                                <span class="font-30 font-weight-600 color-black days"></span>
+                                <span>Days</span>
+                            </div>
+
+                            <div class="flex-col-c-m circle circle-primary m-l-15 m-r-15 m-b-20">
+                                <span class="font-30 font-weight-600 color-black hours"></span>
+                                <span>Hours</span>
+                            </div>
+
+                            <div class="flex-col-c-m circle circle-primary m-l-15 m-r-15 m-b-20">
+                                <span class="font-30 font-weight-600 color-black minutes"></span>
+                                <span>Minutes</span>
+                            </div>
+
+                            <div class="flex-col-c-m circle circle-primary m-l-15 m-r-15 m-b-20">
+                                <span class="font-30 font-weight-600 color-black seconds"></span>
+                                <span>Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item p-y-50">
+                <div class="row g-5 p-x-50">
+                    <div class="col-12 col-lg-6 text-center wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="h-100">
+                            <h1 class="font-now text-uppercase text-center ls-2 font-20 my-2">Akad</h1>
+                            <hr class="px-5 mb-4">
+                            <p class="font-proxima-nova font-14 mb-0">Sabtu, 11 Februari 2023</p>
+                            <p class="font-proxima-nova font-14 mb-0">Pukul 07.00 WIB</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="h-100">
+                            <h1 class="font-now text-uppercase text-center ls-2 font-20 my-2">Resepsi</h1>
+                            <hr class="px-5 mb-4">
+                            <p class="font-proxima-nova font-14 mb-0">Sabtu, 11 Februari 2023</p>
+                            <p class="font-proxima-nova font-14 mb-0">Pukul 11.00 - 12.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 mt-2 p-x-50">
+                    <div class="col-12 text-center wow fadeInUp">
+                        <p class="font-now font-20 font-weight-600 mt-3">Grand Ballroom As Shofa</p>
+                        <p class="font-proxima-nova font-14 mb-0">Masjid Nasional Al Akbar
+                            Surabaya</p>
+                        <p class="font-proxima-nova font-14 mb-0">Jl. Mesjid Agung Timur No.1,
+                            Pagesangan, Kec. Jambangan, Kota Surabaya, Jawa Timur 60274</p>
+                        <div class="col-12">
+                            <div class="flex-col-c-m p-t-30 wow fadeInUp" data-wow-delay="0.1s">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.155416016654!2d112.71283161544831!3d-7.336437074198809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fd448fe51da5%3A0xab9c7fce77c28c17!2sGrand%20Ballroom%20Asshofa%20Masjid%20Nasional%20Al%20Akbar%20Surabaya!5e0!3m2!1sen!2sid!4v1673540106766!5m2!1sen!2sid"
+                                    height="500px" width="100%" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Date End -->
+
+    <!-- Protokol kesehatan  -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 px-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="bg-white text-center">
+                    <img class="img-fluid rounded mb-4" src="{{ asset('img/logo.png') }}"
+                        style="width: 50px; height: 50px">
+                </h6>
+                <h1 class="font-now text-uppercase ls-2 font-20 mb-3 mt-2">Protokol Kesehatan</h1>
+                <p class="font-proxima-nova font-14 mb-5">Tanpa mengurangi rasa hormat, dikarenakan situasi yang sedang
+                    terjadi ditengah <b>pandemi covid-19</b> ini kami memohon maaf karena acara akan diselenggarakan sesuai
+                    peraturan dan himbauan pemerintah.</p>
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100" href="">
+                        <img class="img-fluid rounded" src="{{ asset('img/protokol-kesehatan2.jpeg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memories Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="bg-white text-center">
+                    <img class="img-fluid rounded" src="{{ asset('img/logo.png') }}" style="width: 50px; height: 50px">
+                </h6>
+                <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2">Galeri</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded" src="{{ asset('img/foto7.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded" src="{{ asset('img/foto5.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded" src="{{ asset('img/foto8.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded" src="{{ asset('img/foto9.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded" src="{{ asset('img/foto11.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded" src="{{ asset('img/foto10.png') }}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Memories End -->
+
+    <!-- RSVP dan Ucapan Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row px-4 g-5">
+                <div class="col-12 col-lg-6 px-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <h6 class="bg-white">
+                            <img class="img-fluid rounded mb-4" src="{{ asset('img/logo.png') }}"
+                                style="width: 30px; height: 30px">
+                        </h6>
+                        <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2">Buku Tamu</h1>
+                        <p class="font-proxima-nova font-14 mb-3">Bpk / Ibu / Sdr/i <b>Nama</b>, Apakah Anda dapat hadir?
+                        </p>
+                        <div class="form-check form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="hadir" id="ya"
+                                value="ya">
+                            <label class="form-check-label font-proxima-nova font-14" for="ya">Ya</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="tidak_hadir" id="tidak"
+                                value="tidak">
+                            <label class="form-check-label font-proxima-nova font-14" for="tidak">Tidak</label>
+                        </div>
+                        <div class="mb-4">
+                            <textarea type="text" class="form-control" id="karena" placeholder="Karena..." rows="3"></textarea>
+                        </div>
+                        <p class="font-proxima-nova font-14 mb-3">Berapa orang?</p>
+                        <select class="form-select form-select-lg mb-4" aria-label="Select">
+                            <option selected>Select</option>
+                            <option value="1">Satu</option>
+                            <option value="2">Dua</option>
+                        </select>
+                        <p class="font-proxima-nova font-14 mb-3">Doa & Ucapan</p>
+                        <div class="mb-4">
+                            <textarea type="text" class="form-control" id="karena" placeholder="Doa dan ucapan" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-secondary text-white font-30">Kirim</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 px-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="all-wishes">
+                        <div class="wishes-box">
+                            <div class="testimonial-item bg-light rounded p-4 mb-3">
+                                <h5 class="font-now font-14 mb-1">Sebuah Nama</h5>
+                                <p class="font-now font-12 mb-2">Sebuah Profesi</p>
+                                <p class="font-proxima-nova font-12 mb-0">Selamat menikahhhhhhh semoga bahagia selalu
+                                    dunia
+                                    akherat</p>
+                            </div>
+                            <div class="testimonial-item bg-light rounded p-4 mb-3">
+                                <h5 class="font-now font-14 mb-1">Sebuah Nama</h5>
+                                <p class="font-now font-12 mb-2">Sebuah Profesi</p>
+                                <p class="font-proxima-nova font-12 mb-0">Selamat menikahhhhhhh semoga bahagia selalu
+                                    dunia
+                                    akherat</p>
+                            </div>
+                            <div class="testimonial-item bg-light rounded p-4 mb-3">
+                                <h5 class="font-now font-14 mb-1">Sebuah Nama</h5>
+                                <p class="font-now font-12 mb-2">Sebuah Profesi</p>
+                                <p class="font-proxima-nova font-12 mb-0">Selamat menikahhhhhhh semoga bahagia selalu
+                                    dunia
+                                    akherat</p>
+                            </div>
+                            <div class="testimonial-item bg-light rounded p-4 mb-3">
+                                <h5 class="font-now font-14 mb-1">Sebuah Nama</h5>
+                                <p class="font-now font-12 mb-2">Sebuah Profesi</p>
+                                <p class="font-proxima-nova font-12 mb-0">Selamat menikahhhhhhh semoga bahagia selalu
+                                    dunia
+                                    akherat</p>
+                            </div>
+                            <div class="testimonial-item bg-light rounded p-4 mb-3">
+                                <h5 class="font-now font-14 mb-1">Sebuah Nama</h5>
+                                <p class="font-now font-12 mb-2">Sebuah Profesi</p>
+                                <p class="font-proxima-nova font-12 mb-0">Selamat menikahhhhhhh semoga bahagia selalu
+                                    dunia
+                                    akherat</p>
+                            </div>
+                            <div class="testimonial-item bg-light rounded p-4 mb-3">
+                                <h5 class="font-now font-14 mb-1">Sebuah Nama</h5>
+                                <p class="font-now font-12 mb-2">Sebuah Profesi</p>
+                                <p class="font-proxima-nova font-12 mb-0">Selamat menikahhhhhhh semoga bahagia selalu
+                                    dunia
+                                    akherat</p>
+                            </div>
+                            <div class="testimonial-item bg-light rounded p-4">
+                                <h5 class="font-now font-14 mb-1">Sebuah Nama</h5>
+                                <p class="font-now font-12 mb-2">Sebuah Profesi</p>
+                                <p class="font-proxima-nova font-12 mb-0">Selamat menikahhhhhhh semoga bahagia selalu
+                                    dunia
+                                    akherat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP dan Ucapan End -->
+
+    <!-- Terima Kasih -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center p-4">
+                <h6 class="bg-white">
+                    <img class="img-fluid rounded mb-4" src="{{ asset('img/logo.png') }}"
+                        style="width: 30px; height: 30px">
+                </h6>
+                <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('img/foto8.png') }}"
+                    alt="">
+                <div class="team-text">
+                    <div class="team-title">
+                        <h1 class="font-dancing-script font-50 m-b-50">Terima Kasih</h1>
+                        <p class="font-proxima-nova font-12 mb-0">Copyright 2023 <b>&copy; FFForever</b> <br> All Right
+                            Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Terima Kasih End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-square back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Music Start -->
     <iframe src="{{ asset('music/silence.mp3') }}" type="audio/mp3" allow="autoplay" id="audio"
         style="display:none"></iframe>
     <audio autoplay loop id="player">
         <source src="{{ asset('music/a7x-afterlife.mp3') }}" type="audio/mp3">
     </audio>
-    <div>
-        <div id="home" class="size-full parallax-content overlay cover">
-            <div class="text-content">
-                <h4 class="font-now font-15 ls-8 p-b-10">THE WEDDING OF</h4>
-                <h1 class="font-dancing-script font-55 p-b-100">Firda & Fuad</h1>
-                <p class="font-open-sans p-b-10">Yth. Bapak / Ibu / Saudara / i</p>
-                <h3 class="font-now p-b-30">Nama</h3>
-                <div class="primary-white-button">
-                    <a href='#' class="scroll-link pointer" data-id="about">Buka Undangan</a>
-                </div>
-            </div>
-        </div>
-
-        <section id="about" class="page-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service-item">
-                            <div class="icon">
-                                <img src="{{ asset('img/blog_item_01.jpg') }}" alt="" />
-                            </div>
-                            <h4>Smart Notifications</h4>
-                            <div class="line-dec"></div>
-                            <p>
-                                Curabitur non risus fringilla libero
-                                accumsan molestie et quis justo. Cras
-                                aliquam tempor sem, vestibulum facilisis
-                                dui. Mauris malesuada porta.
-                            </p>
-                            <div class="primary-blue-button">
-                                <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service-item">
-                            <div class="icon">
-                                <img src="{{ asset('img/blog_item_01.jpg') }}" alt="" />
-                            </div>
-                            <h4>Lovely Web Design</h4>
-                            <div class="line-dec"></div>
-                            <p>
-                                Do NOT re-distribute our template on any
-                                template download website. However, you can
-                                feel free to use this template for your
-                                commercial or non-commercial sites.
-                            </p>
-                            <div class="primary-blue-button">
-                                <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service-item">
-                            <div class="icon">
-                                <img src="{{ asset('img/blog_item_01.jpg') }}" alt="" />
-                            </div>
-                            <h4>24/7 Quick Support</h4>
-                            <div class="line-dec"></div>
-                            <p>
-                                Feel free to talk to us on our Facebook page
-                                if you have any kind of question or
-                                suggestion. Sed tempor mi quis rhoncus
-                                convallis.
-                            </p>
-                            <div class="primary-blue-button">
-                                <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service-item">
-                            <div class="icon">
-                                <img src="{{ asset('img/blog_item_01.jpg') }}" alt="" />
-                            </div>
-                            <h4>One-Click Setup</h4>
-                            <div class="line-dec"></div>
-                            <p>
-                                Class aptent taciti sociosqu ad litora
-                                torquent per conubia nostra, per inceptos
-                                himenaeos. Praesent viverra, nunc et mollis
-                                fermentum.
-                            </p>
-                            <div class="primary-blue-button">
-                                <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <div class="content-wrapper">
-                <div class="inner-container container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="section-heading">
-                                <h4>Our Gallery</h4>
-                                <div class="line-dec"></div>
-                                <p>
-                                    In malesuada placerat ligula et
-                                    bibendum. Aenean eget urna enim. Sed
-                                    enim ante, bibendum nec dictum ac,
-                                    gravida ac lectus.
-                                </p>
-                                <div class="filter-categories">
-                                    <ul class="project-filter">
-                                        <li class="filter" data-filter="all">
-                                            <span>Show All</span>
-                                        </li>
-                                        <li class="filter" data-filter="branding">
-                                            <span>Branding</span>
-                                        </li>
-                                        <li class="filter" data-filter="graphic">
-                                            <span>Graphic</span>
-                                        </li>
-                                        <li class="filter" data-filter="nature">
-                                            <span>Nature</span>
-                                        </li>
-                                        <li class="filter" data-filter="animation">
-                                            <span>Animation</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="projects-holder-3">
-                                <div class="projects-holder">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6 project-item mix nature">
-                                            <div class="thumb">
-                                                <div class="image">
-                                                    <a href="{{ asset('img/blog_item_01.jpg') }}"
-                                                        data-lightbox="image-1"><img
-                                                            src="{{ asset('img/blog_item_01.jpg') }}" /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 project-item mix animation">
-                                            <div class="thumb">
-                                                <div class="image">
-                                                    <a href="{{ asset('img/blog_item_01.jpg') }}"
-                                                        data-lightbox="image-1"><img
-                                                            src="{{ asset('img/blog_item_01.jpg') }}" /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 project-item mix branding">
-                                            <div class="thumb">
-                                                <div class="image">
-                                                    <a href="{{ asset('img/blog_item_01.jpg') }}"
-                                                        data-lightbox="image-1"><img
-                                                            src="{{ asset('img/blog_item_01.jpg') }}" /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 project-item mix graphic nature">
-                                            <div class="thumb">
-                                                <div class="image">
-                                                    <a href="{{ asset('img/blog_item_01.jpg') }}"
-                                                        data-lightbox="image-1"><img
-                                                            src="{{ asset('img/blog_item_01.jpg') }}" /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 project-item mix branding">
-                                            <div class="thumb">
-                                                <div class="image">
-                                                    <a href="{{ asset('img/blog_item_01.jpg') }}"
-                                                        data-lightbox="image-1"><img
-                                                            src="{{ asset('img/blog_item_01.jpg') }}" /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 project-item mix graphic animation">
-                                            <div class="thumb">
-                                                <div class="image">
-                                                    <a href="{{ asset('img/blog_item_01.jpg') }}"
-                                                        data-lightbox="image-1"><img
-                                                            src="{{ asset('img/blog_item_01.jpg') }}" /></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonial">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div id="owl-testimonials" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="testimonials-item">
-                                    <p>
-                                        “ Quisque ullamcorper odio a nisl
-                                        lacinia dictum. Vestibulum malesuada
-                                        ipsum in turpis finibus, ut sagittis
-                                        erat scelerisque. Curabitur non
-                                        risus fringilla libero accumsan
-                                        molestie et quis justo. ”
-                                    </p>
-                                    <h4>George Rich</h4>
-                                    <span>Marketing Head</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonials-item">
-                                    <p>
-                                        “ Suspendisse magna mauris,
-                                        convallis vel finibus eget, lobortis
-                                        dictum neque. Nam tincidunt metus
-                                        nec eros dignissim consectetur. ”
-                                    </p>
-                                    <h4>John Henry</h4>
-                                    <span>Art Director</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonials-item">
-                                    <p>
-                                        “ Aenean semper aliquam est ut
-                                        maximus. Fusce id diam eget orci
-                                        lobortis ultricies at ac velit.
-                                        Curabitur laoreet massa et fringilla
-                                        sagittis. ”
-                                    </p>
-                                    <h4>Danny Cute</h4>
-                                    <span>Founder</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonials-item">
-                                    <p>
-                                        “ Maecenas eu odio pharetra,
-                                        elementum lorem eget, efficitur
-                                        erat. Duis eget justo non nisi
-                                        iaculis vestibulum. Aliquam erat
-                                        volutpat. ”
-                                    </p>
-                                    <h4>Richard Beal</h4>
-                                    <span>Senior Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="tabs-content" id="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="wrapper">
-                        <div class="col-md-4">
-                            <div class="section-heading">
-                                <h4>Our Blog Posts</h4>
-                                <div class="line-dec"></div>
-                                <p>
-                                    Nam vulputate elementum nulla, sit amet
-                                    congue ipsum malesuada pretium. Vivamus
-                                    vel gravida quam.
-                                </p>
-                                <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                    <li>
-                                        <a href="#tab1" class="active">Nulla eget convallis augue</a>
-                                    </li>
-                                    <li>
-                                        <a href="#tab2">Quisque ultricies maximus</a>
-                                    </li>
-                                    <li>
-                                        <a href="#tab3">Sed vel elit et lorem</a>
-                                    </li>
-                                    <li>
-                                        <a href="#tab4">Vivamus purus neque</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <section id="first-tab-group" class="tabgroup">
-                                <div id="tab1">
-                                    <img src="{{ asset('img/blog_item_01.jpg') }}" alt="" />
-                                    <div class="text-content">
-                                        <h4>Nulla eget convallis augue</h4>
-                                        <span><a href="#">Digital Marketing</a>
-                                            / <a href="#">Honey</a> /
-                                            <a href="#">21 September 2020</a></span>
-                                        <p>
-                                            Donec interdum scelerisque
-                                            auctor. Nulla id lorem auctor,
-                                            bibendum lectus elementum, porta
-                                            felis. Class aptent taciti
-                                            sociosqu ad litora torquent per
-                                            conubia nostra, per inceptos
-                                            himenaeos.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="tab2">
-                                    <img src="{{ asset('img/blog_item_02.jpg') }}" alt="" />
-                                    <div class="text-content">
-                                        <h4>Quisque ultricies maximus</h4>
-                                        <span><a href="#">Branding</a> /
-                                            <a href="#">David</a> /
-                                            <a href="#">24 August 2020</a></span>
-                                        <p>
-                                            Etiam fringilla posuere pretium.
-                                            Maecenas tempor pellentesque
-                                            elit in dapibus. Curabitur
-                                            viverra urna sem, ut
-                                            sollicitudin sem congue vel.
-                                            Donec fringilla augue in justo
-                                            molestie fermentum quis ac mi.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="tab3">
-                                    <img src="{{ asset('img/blog_item_03.jpg') }}" alt="" />
-                                    <div class="text-content">
-                                        <h4>Sed vel elit et lorem</h4>
-                                        <span><a href="#">Web Design</a> /
-                                            <a href="#">William</a> /
-                                            <a href="#">18 July 2020</a></span>
-                                        <p>
-                                            Vestibulum ante ipsum primis in
-                                            faucibus orci luctus et ultrices
-                                            posuere cubilia Curae; Fusce id
-                                            ipsum porta, dictum sem sed,
-                                            bibendum quam. Maecenas mattis
-                                            risus eget orci rhoncus.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="tab4">
-                                    <img src="{{ asset('img/blog_item_04.jpg') }}" alt="" />
-                                    <div class="text-content">
-                                        <h4>Vivamus purus neque</h4>
-                                        <span><a href="#">E-Commerce</a> /
-                                            <a href="#">George</a> /
-                                            <a href="#">14 July 2020</a></span>
-                                        <p>
-                                            Aliquam erat volutpat. Nulla at
-                                            nunc nec ante rutrum congue id
-                                            in diam. Nulla at lectus non
-                                            turpis placerat volutpat lacinia
-                                            ut mi. Quisque ultricies maximus
-                                            justo a blandit. Donec sit amet
-                                            commodo arcu. Sed sit amet
-                                            iaculis mi, vel fermentum nisi.
-                                            Morbi dui enim, vestibulum non
-                                            accumsan ac, tempor non nisl.
-                                        </p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="contact-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <h4>Contact Us</h4>
-                            <div class="line-dec"></div>
-                            <p>
-                                Nunc posuere non quam at pharetra. Mauris
-                                tincidunt purus vel ultrices malesuada.
-                                Integer euismod erat ut nulla ultrices, ut
-                                auctor eros feugiat.
-                            </p>
-                            <div class="pop-button">
-                                <h4>Send us a message</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="pop">
-                            <span>✖</span>
-                            <form id="contact" action="#" method="post">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <input name="name" type="text" class="form-control" id="name"
-                                                placeholder="Your name..." required="" />
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <input name="email" type="email" class="form-control" id="email"
-                                                placeholder="Your email..." required="" />
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
-                                                required=""></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="btn">
-                                                Send Message
-                                            </button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="map">
-            <!-- How to change your own map point
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              1. Go to Google Maps
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              2. Click on your location point
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              3. Click "Share" and choose "Embed map" tab
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              4. Copy only URL and paste it within the src="" field below
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.485196115994!2d103.85995441789784!3d1.2880401763270322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fb4e58ad9cd826e!2sSingapore+Flyer!5e0!3m2!1sen!2sth!4v1505825620371"
-                width="100%" height="500" frameborder="0" style="border: 0" allowfullscreen></iframe>
-        </div>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="logo">
-                            <a class="logo-ft scroll-top" href="#"><em>T</em>inker</a>
-                            <p>
-                                Copyright &copy; 2020 Your Company
-                                <br />Design: TemplateMo
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="location">
-                            <h4>Location</h4>
-                            <ul>
-                                <li>
-                                    46 Raffles Ave, <br />Singapore 039803
-                                </li>
-                                <li>
-                                    12 Republic Blvd, <br />Singapore 038975
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-12">
-                        <div class="contact-info">
-                            <h4>More Info</h4>
-                            <ul>
-                                <li><em>Phone</em>: 040-040-0440</li>
-                                <li><em>Email</em>: tk@company.co</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-12">
-                        <div class="connect-us">
-                            <h4>Get Social with us</h4>
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-google"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-rss"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <!-- Music End -->
 @endsection
 
 @section('custom_script')
-    <script>
-        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        if (!isChrome) {
-            $('#audio').remove()
-        } else {
-            $('#player').remove() // just to make sure that it will not have 2x audio in the background 
-        }
-    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('dgcom/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('dgcom/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('dgcom/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('dgcom/lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ asset('dgcom/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('dgcom/lib/lightbox/js/lightbox.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ asset('dgcom/js/main.js') }}"></script>
 @endsection

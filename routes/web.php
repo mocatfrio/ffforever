@@ -18,5 +18,4 @@ Route::get('/', function () {
 });
 
 // Route wedding invitation 
-Route::get('/wedding-invitation/1/{id}', 'WeddingInvitationController@wedding_invitation');
-Route::get('/wedding-invitation/2/{id}', 'WeddingInvitationController@wedding_invitation_2');
+Route::get('/wedding-invitation/{id}', 'WeddingInvitationController@wedding_invitation');
