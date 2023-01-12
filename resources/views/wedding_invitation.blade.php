@@ -30,7 +30,7 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('img/foto12.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('images/foto12.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3">
                             <h4 class="title-line-1 mb-4 animated zoomIn">The
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('img/foto1.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('images/foto1.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3">
                             <h4 class="title-line-1 mb-4 animated zoomIn">The
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('img/foto2.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('images/foto2.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3">
                             <h4 class="title-line-1 mb-4 animated zoomIn">The
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('img/foto3.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('images/foto3.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3">
                             <h4 class="title-line-1 mb-4 animated zoomIn">The
@@ -130,7 +130,7 @@
             <div class="row g-4">
                 <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="text-center p-4">
-                        <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('img/hf.png') }}"
+                        <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('images/hf.png') }}"
                             alt="">
                         <div class="team-text">
                             <div class="team-title">
@@ -154,7 +154,7 @@
                 </div>
                 <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="text-center p-4">
-                        <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('img/fd.png') }}"
+                        <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('images/fd.png') }}"
                             alt="">
                         <div class="team-text">
                             <div class="team-title">
@@ -262,7 +262,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 px-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h6 class="bg-white text-center">
-                    <img class="img-fluid rounded mb-4" src="{{ asset('img/logo.png') }}"
+                    <img class="img-fluid rounded mb-4" src="{{ asset('images/logo.png') }}"
                         style="width: 50px; height: 50px">
                 </h6>
                 <h1 class="font-now text-uppercase ls-2 font-20 mb-3 mt-2">Protokol Kesehatan</h1>
@@ -271,7 +271,8 @@
                     peraturan dan himbauan pemerintah.</p>
                 <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100" href="">
-                        <img class="img-fluid rounded" src="{{ asset('img/protokol-kesehatan2.jpeg') }}" alt="">
+                        <img class="img-fluid rounded" src="{{ asset('images/protokol-kesehatan.jpeg') }}"
+                            alt="">
                     </a>
                 </div>
             </div>
@@ -283,39 +284,40 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h6 class="bg-white text-center">
-                    <img class="img-fluid rounded" src="{{ asset('img/logo.png') }}" style="width: 50px; height: 50px">
+                    <img class="img-fluid rounded" src="{{ asset('images/logo.png') }}"
+                        style="width: 50px; height: 50px">
                 </h6>
                 <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2">Galeri</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded" src="{{ asset('img/foto7.png') }}" alt="">
+                        <img class="img-fluid rounded" src="{{ asset('images/foto7.png') }}" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded" src="{{ asset('img/foto5.png') }}" alt="">
+                        <img class="img-fluid rounded" src="{{ asset('images/foto5.png') }}" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded" src="{{ asset('img/foto8.png') }}" alt="">
+                        <img class="img-fluid rounded" src="{{ asset('images/foto8.png') }}" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded" src="{{ asset('img/foto9.png') }}" alt="">
+                        <img class="img-fluid rounded" src="{{ asset('images/foto9.png') }}" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded" src="{{ asset('img/foto11.png') }}" alt="">
+                        <img class="img-fluid rounded" src="{{ asset('images/foto11.png') }}" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded" src="{{ asset('img/foto10.png') }}" alt="">
+                        <img class="img-fluid rounded" src="{{ asset('images/foto10.png') }}" alt="">
                     </a>
                 </div>
             </div>
@@ -330,7 +332,7 @@
                 <div class="col-12 col-lg-6 px-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="h-100">
                         <h6 class="bg-white">
-                            <img class="img-fluid rounded mb-4" src="{{ asset('img/logo.png') }}"
+                            <img class="img-fluid rounded mb-4" src="{{ asset('images/logo.png') }}"
                                 style="width: 30px; height: 30px">
                         </h6>
                         <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2">Buku Tamu</h1>
@@ -427,10 +429,10 @@
         <div class="container">
             <div class="text-center p-4">
                 <h6 class="bg-white">
-                    <img class="img-fluid rounded mb-4" src="{{ asset('img/logo.png') }}"
+                    <img class="img-fluid rounded mb-4" src="{{ asset('images/logo.png') }}"
                         style="width: 30px; height: 30px">
                 </h6>
-                <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('img/foto8.png') }}"
+                <img class="img-fluid border rounded-circle w-50 p-2 mb-4" src="{{ asset('images/foto8.png') }}"
                     alt="">
                 <div class="team-text">
                     <div class="team-title">

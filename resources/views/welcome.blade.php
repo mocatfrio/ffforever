@@ -5,9 +5,10 @@
 @section('content')
     <!-- Slider -->
     <div class="slider">
-        <div class="slider-item bg-img" style="background-image: url('img/foto1.jpg');"></div>
-        <div class="slider-item bg-img" style="background-image: url('img/foto2.jpg');"></div>
-        <div class="slider-item bg-img" style="background-image: url('img/foto3.jpg');"></div>
+        <div class="slider-item bg-img" style="background-image: url('images/foto1.jpg');"></div>
+        <div class="slider-item bg-img" style="background-image: url('images/foto2.jpg');"></div>
+        <div class="slider-item bg-img" style="background-image: url('images/foto11.jpg');"></div>
+        <div class="slider-item bg-img" style="background-image: url('images/foto3.jpg');"></div>
     </div>
 
     <div class="size-full overlay color-white">
@@ -21,7 +22,7 @@
                 We are under construction!
             </h4>
 
-            <div class="flex-w flex-c-m cd100 p-b-33">
+            <div class="flex-w flex-c-m cd100 p-b-33 d-none d-lg-flex">
                 <div class="flex-col-c-m circle m-l-15 m-r-15 m-b-20">
                     <span class="font-30 font-weight-600 days"></span>
                     <span>Days</span>
