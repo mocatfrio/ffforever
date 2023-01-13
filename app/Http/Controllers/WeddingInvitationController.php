@@ -22,8 +22,6 @@ class WeddingInvitationController extends Controller
 
 	public function save_rsvp(Request $request) {
 		$invitation = WeddingInvitations::find($request->get('id'));
-
-		$allMessages = $this->get_message();
 	
 		$invitation->hadir = $request->get('hadir');
 		$invitation->jumlah = $request->get('jumlah');
@@ -31,12 +29,8 @@ class WeddingInvitationController extends Controller
 		$invitation->pesan = $request->get('pesan');
 	
 		$invitation->save();
-	  
-		return view('wedding_invitation', 
-		[
-			'allMessages' => $allMessages->toArray(),
-			'invitation' => $invitation->toArray()
-		]);
+		return redirect('/wedding-invitation/'.$request->get('id'));
+
 	}
 
 	private function get_message(){
