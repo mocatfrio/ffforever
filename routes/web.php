@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 // Route wedding invitation 
 Route::get('/wedding-invitation/{id}', 'WeddingInvitationController@wedding_invitation');
-Route::post('/wedding-invitation', 'WeddingInvitationController@save_rsvp');
+Route::post('/save-rsvp', 'WeddingInvitationController@save_rsvp');

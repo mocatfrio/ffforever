@@ -39,7 +39,7 @@
                                 & Fuad</h1>
                             <p class="font-open-sans text-white font-12 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
-                            <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $invitation['nama'] }}</h3>
+                            <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $name }}</h3>
                             <div class="primary-white-button animated zoomIn">
                                 <a href='#s' class="scroll-link pointer" data-id="name">Buka Undangan</a>
                             </div>
@@ -56,7 +56,7 @@
                                 & Fuad</h1>
                             <p class="font-open-sans text-white font-14 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
-                            <h3 class="font-now text-white font-20 p-b-30">{{ $invitation['nama'] }}</h3>
+                            <h3 class="font-now text-white font-20 p-b-30">{{ $name }}</h3>
                             <div class="primary-white-button">
                                 <a href='' class="scroll-link pointer" data-id="name">Buka Undangan</a>
                             </div>
@@ -73,7 +73,7 @@
                                 & Fuad</h1>
                             <p class="font-open-sans text-white font-14 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
-                            <h3 class="font-now text-white font-20 p-b-30">{{ $invitation['nama'] }}</h3>
+                            <h3 class="font-now text-white font-20 p-b-30">{{ $name }}</h3>
                             <div class="primary-white-button">
                                 <a href='' class="scroll-link pointer" data-id="name">Buka Undangan</a>
                             </div>
@@ -90,7 +90,7 @@
                                 & Fuad</h1>
                             <p class="font-open-sans text-white font-12 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
-                            <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $invitation['nama'] }}</h3>
+                            <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $name }}</h3>
                             <div class="primary-white-button animated zoomIn">
                                 <a href='#s' class="scroll-link pointer" data-id="name">Buka Undangan</a>
                             </div>
@@ -230,7 +230,7 @@
                             <h1 class="font-now text-uppercase text-center ls-2 font-20 my-2">Resepsi</h1>
                             <hr class="px-5 mb-4">
                             <p class="font-proxima-nova font-14 mb-0">Sabtu, 11 Februari 2023</p>
-                            <p class="font-proxima-nova font-14 mb-0">Pukul {{ $invitation['waktu'] }} WIB</p>
+                            <p class="font-proxima-nova font-14 mb-0">Pukul 11.00 - 12.00 WIB</p>
                         </div>
                     </div>
                 </div>
@@ -331,14 +331,14 @@
             <div class="row px-4 g-5">
                 <div class="col-12 col-lg-6 px-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="h-100">
-                        <form method="POST" action="/wedding-invitation">
+                        <form method="POST" action="/save-rsvp">
                             @csrf
                             <h6 class="bg-white">
                                 <img class="img-fluid rounded mb-4" src="{{ asset('images/logo.png') }}"
                                     style="width: 30px; height: 30px">
                             </h6>
                             <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2">Buku Tamu</h1>
-                            <p class="font-proxima-nova font-14 mb-3">Bpk / Ibu / Sdr/i <b>{{ $invitation['nama'] }}</b>, Apakah Anda dapat hadir?
+                            <p class="font-proxima-nova font-14 mb-3">Bpk / Ibu / Sdr/i <b>{{ $name }}</b>, Apakah Anda dapat hadir?
                             </p>
                             <div class="form-check form-check-inline mb-2">
                                 <input class="form-check-input" type="radio" name="hadir" id="ya"
@@ -360,13 +360,14 @@
                                 <option value="2">Dua</option>
                             </select>
                             <p class="font-proxima-nova font-14 mb-3">Doa & Ucapan</p>
+                            <input type="text" name="nama" class="form-control" placeholder="nama">
+                            <br>
+                            <input type="text" name="dari" class="form-control" placeholder="dari">
+                            <br>
                             <div class="mb-4">
                                 <textarea type="text" class="form-control" name="pesan" id="karena" placeholder="Doa dan ucapan" rows="3"></textarea>
                             </div>
-
-                            <input class="hidden" name="id" value="{{ $invitation['_id']}}">
-
-                            <button type="submit" class="btn btn-lg btn-secondary text-white font-30">Kirim</button>
+                            <button type="submit" id="btn-submit" class="btn btn-lg btn-secondary text-white font-30">Kirim</button>
                         </form>
                     </div>
                 </div>
@@ -376,7 +377,7 @@
                             @foreach ((array)$allMessages as $message)
                             <div class="testimonial-item bg-light rounded p-4 mb-3">
                                 <h5 class="font-now font-14 mb-1">{{ $message['nama'] }}</h5>
-                                <p class="font-now font-12 mb-2">{{ $message['profesi'] }}</p>
+                                <p class="font-now font-12 mb-2">{{ $message['dari'] }}</p>
                                 <p class="font-proxima-nova font-12 mb-0">{{ $message['pesan'] }}</p>
                             </div>
                             @endforeach
@@ -428,6 +429,7 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="{{ asset('dgcom/lib/wow/wow.min.js') }}"></script>
     <script src="{{ asset('dgcom/lib/easing/easing.min.js') }}"></script>
     <script src="{{ asset('dgcom/lib/waypoints/waypoints.min.js') }}"></script>
@@ -437,4 +439,17 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('dgcom/js/main.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            $.post("demo_test_post.asp",
+            {
+                name: "Donald Duck",
+                city: "Duckburg"
+            },
+            function(data, status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    </script>
 @endsection

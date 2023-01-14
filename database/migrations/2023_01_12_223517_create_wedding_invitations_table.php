@@ -16,8 +16,7 @@ class CreateWeddingInvitationSTable extends Migration
         Schema::create('wedding_invitations', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('profesi');
-            $table->string('waktu');
+            $table->string('dari');
             $table->string('hadir');
             $table->string('jumlah');
             $table->string('alasan');
