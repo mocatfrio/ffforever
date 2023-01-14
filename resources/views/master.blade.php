@@ -98,13 +98,13 @@
         $('.cd100').countdown100({
             /*Set Endtime here*/
             /*Endtime must be > current time*/
-            endtimeYear: 0,
-            endtimeMonth: 0,
-            endtimeDate: 30,
-            endtimeHours: 0,
+            endtimeYear: 2023,
+            endtimeMonth: 2,
+            endtimeDate: 11,
+            endtimeHours: 7,
             endtimeMinutes: 0,
             endtimeSeconds: 0,
-            timeZone: ""
+            timeZone: "Asia/Jakarta"
             // ex:  timeZone: "America/New_York"
             //go to " http://momentjs.com/timezone/ " to get timezone
         });
