@@ -21,6 +21,7 @@ class CreateWeddingInvitationSTable extends Migration
             $table->string('jumlah');
             $table->string('alasan');
             $table->string('pesan');
+            $table->int('timestamp');
             $table->timestamps();
         });
     }

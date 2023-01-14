@@ -341,17 +341,17 @@
                             <p class="font-proxima-nova font-14 mb-3">Bpk / Ibu / Sdr/i <b>{{ $name }}</b>, Apakah Anda dapat hadir?
                             </p>
                             <div class="form-check form-check-inline mb-2">
-                                <input class="form-check-input" type="radio" name="hadir" id="ya"
+                                <input class="form-check-input" type="radio" name="rsvp_join" id="ya"
                                     value="1">
                                 <label class="form-check-label font-proxima-nova font-14" for="ya">Ya</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="hadir" id="tidak"
+                                <input class="form-check-input" type="radio" name="rsvp_join" id="tidak"
                                     value="0">
                                 <label class="form-check-label font-proxima-nova font-14" for="tidak">Tidak</label>
                             </div>
                             <div class="mb-4">
-                                <textarea type="text" name="alasan" class="form-control" id="karena" placeholder="Karena..." rows="3"></textarea>
+                                <textarea type="text" name="rsvp_reason" class="form-control" id="karena" placeholder="Karena..." rows="3"></textarea>
                             </div>
                             <p class="font-proxima-nova font-14 mb-3">Berapa orang?</p>
                             <select class="form-select form-select-lg mb-4" name="jumlah" aria-label="Select">
@@ -360,12 +360,13 @@
                                 <option value="2">Dua</option>
                             </select>
                             <p class="font-proxima-nova font-14 mb-3">Doa & Ucapan</p>
-                            <input type="text" name="nama" class="form-control" placeholder="nama">
+                            <input type="text" name="message_name" class="form-control" placeholder="Nama">
                             <br>
-                            <input type="text" name="dari" class="form-control" placeholder="dari">
+                            <input type="text" name="message_from" class="form-control" placeholder="Dari">
                             <br>
+                            <input name="name" class="hidden" value={{ $name }}>
                             <div class="mb-4">
-                                <textarea type="text" class="form-control" name="pesan" id="karena" placeholder="Doa dan ucapan" rows="3"></textarea>
+                                <textarea type="text" class="form-control" name="message_data" id="karena" placeholder="Doa dan ucapan" rows="3"></textarea>
                             </div>
                             <button type="submit" id="btn-submit" class="btn btn-lg btn-secondary text-white font-30">Kirim</button>
                         </form>
@@ -376,9 +377,10 @@
                         <div class="wishes-box">
                             @foreach ((array)$allMessages as $message)
                             <div class="testimonial-item bg-light rounded p-4 mb-3">
-                                <h5 class="font-now font-14 mb-1">{{ $message['nama'] }}</h5>
-                                <p class="font-now font-12 mb-2">{{ $message['dari'] }}</p>
-                                <p class="font-proxima-nova font-12 mb-0">{{ $message['pesan'] }}</p>
+                                <p class="font-now font-10 mb-2 pull-right">{{ isset($message['timestamp']) ? date("d M Y, H:i",$message['timestamp']) : ""}}</p>
+                                <h5 class="font-now font-14 mb-1">{{ ucwords($message['message_name']) ?? "" }}</h5>
+                                <p class="font-now font-12 mb-2">{{ $message['message_from'] ??  "" }}</p>
+                                <p class="font-proxima-nova font-12 mb-0"><?php echo nl2br($message['message_data']) ?></p>
                             </div>
                             @endforeach
                         </div>

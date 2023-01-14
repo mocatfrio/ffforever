@@ -20,19 +20,21 @@ class WeddingInvitationController extends Controller
 
 		$invitation = new WeddingInvitations();
 		
-		$invitation->nama = $request->get('nama');
-		$invitation->dari = $request->get('dari');
-		$invitation->hadir = $request->get('hadir');
-		$invitation->jumlah = $request->get('jumlah');
-		$invitation->alasan = $request->get('alasan');
-		$invitation->pesan = $request->get('pesan');
+		$invitation->nama = $request->get('name');
+		$invitation->message_name = $request->get('message_name');
+		$invitation->message_from = $request->get('message_from');
+		$invitation->message_data = $request->get('message_data');
+		$invitation->rsvp_join = $request->get('rsvp_join');
+		$invitation->rsvp_count = $request->get('rsvp_count');
+		$invitation->rsvp_reason = $request->get('rsvp_reason');
+		$invitation->timestamp = time();
 	
 		$invitation->save();
 		return redirect('/wedding-invitation/'.$invitation->nama);
 	}
 
 	private function get_message(){
-		$allMessages = WeddingInvitations::where('pesan', 'exists', true)->get();
+		$allMessages = WeddingInvitations::where('message_data', 'exists', true)->orderBy('timestamp', 'desc')->get();
 		return $allMessages;
 	}
 }
