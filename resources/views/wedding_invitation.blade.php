@@ -11,6 +11,7 @@
     <link href="{{ asset('dgcom/lib/animate/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('dgcom/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('dgcom/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('dgcom/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -41,7 +42,7 @@
                                 Saudara / i</p>
                             <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $name }}</h3>
                             <div class="primary-white-button animated zoomIn">
-                                <a href='#s' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                                <a href='#s' class="scroll-link pointer start" data-id="name">Buka Undangan</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +93,7 @@
                                 Saudara / i</p>
                             <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $name }}</h3>
                             <div class="primary-white-button animated zoomIn">
-                                <a href='#s' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                                <a href='#s' class="scroll-link pointer start" data-id="name">Buka Undangan</a>
                             </div>
                         </div>
                     </div>
@@ -211,6 +212,28 @@
                                 <span class="font-30 font-weight-600 color-black seconds"></span>
                                 <span>Seconds</span>
                             </div>
+                        </div>
+                    </div>
+                    <div class="atcb" style="display:none;">
+                        <div class="atcb" style="display:none;">
+                            {
+                                "name":"Firda & Fuad Wedding",
+                                "description":"Kepada Yth. Kehadiran dan Do'a restu Bapak/Ibu/Saudara/i untuk acara pernikahan kami sangatlah berarti | Pernikahan Firda & Fuad | Sabtu, 11 Februari 2022",
+                                "startDate":"2023-02-11",
+                                "endDate":"2023-02-11",
+                                "startTime":"11:00",
+                                "endTime":"12:00",
+                                "location":"Jl. Mesjid Agung Timur No.1, Pagesangan, Kec. Jambangan, Kota Surabaya, Jawa Timur 60274",
+                                "label":"Tambah ke Kalender",
+                                "options":[
+                                    "Google"
+                                ],
+                                "timeZone":"Asia/Jakarta",
+                                "trigger":"click",
+                                "inline":false,
+                                "listStyle":"modal",
+                                "iCalFileName":"Reminder-Event"
+                            }
                         </div>
                     </div>
                 </div>
@@ -419,11 +442,18 @@
     </a>
 
     <!-- Music Start -->
-    <iframe src="{{ asset('music/silence.mp3') }}" type="audio/mp3" allow="autoplay" id="audio"
+    <div class="music-box hidden">
+        <input type="checkbox" id="music">
+        <label class="music" for="music"></label>
+        <audio id="player">
+            <source src="https://lenadesign.org/wp-content/uploads/2022/03/Fur-Elise-by-Beethoven-Beethoven.mp3" type="audio/mpeg"/>
+        </audio>
+    </div>
+    {{-- <iframe src="{{ asset('music/silence.mp3') }}" type="audio/mp3" allow="autoplay" id="audio"
         style="display:none"></iframe>
     <audio autoplay loop id="player">
         <source src="{{ asset('music/a7x-afterlife.mp3') }}" type="audio/mp3">
-    </audio>
+    </audio> --}}
     <!-- Music End -->
 @endsection
 
@@ -438,20 +468,29 @@
     <script src="{{ asset('dgcom/lib/counterup/counterup.min.js') }}"></script>
     <script src="{{ asset('dgcom/lib/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dgcom/lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
 
     <!-- Template Javascript -->
     <script src="{{ asset('dgcom/js/main.js') }}"></script>
 
     <script>
-        $(document).ready(function(){
-            $.post("demo_test_post.asp",
-            {
-                name: "Donald Duck",
-                city: "Duckburg"
-            },
-            function(data, status){
-                alert("Data: " + data + "\nStatus: " + status);
-            });
+        let input = document.getElementById("music");
+        let audio = document.getElementById("player");
+
+        input.addEventListener("click", function(){
+        if(audio.paused){
+            audio.play();
+        } else {
+            audio.pause();
+        }
         });
+
+        $('.start').click(function(){
+            // $('body').removeClass('stop-scrolling')
+            $('.music-box').removeClass('hidden');
+            input.checked = true;
+            audio.play();
+        })
+
     </script>
 @endsection

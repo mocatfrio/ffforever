@@ -13865,3 +13865,59 @@ span {
 .footer .copyright a:hover {
   color: var(--primary);
 }
+
+
+input#music {
+  display: none;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.music {
+  background-image: url(../images/music.svg);
+  position: fixed;
+  width:50px;
+  height: 50px;
+  border-radius: 25px;
+  z-index:10;
+  bottom:10px;
+  left:10px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+#music:checked + .music {
+  animation: rotating 8s infinite linear;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
