@@ -47,6 +47,18 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
+
+        function add_message(data){
+            console.log("added message")
+            var tpl = $('#message-template').clone();
+            tpl.attr('hidden',false)
+            tpl.find('#tpl-name').text(data.message_name);
+            tpl.find('#tpl-time').text(data.timestamp);
+            tpl.find('#tpl-from').text(data.message_from);
+            tpl.find('#tpl-message').text(data.message_data);
+            tpl.insertBefore('.testimonial-item:first')
+        }
+
         $(document).ready(function() {
 
             // $('body').addClass('stop-scrolling')
@@ -68,6 +80,74 @@
                 event.preventDefault();
                 $('#main-nav').toggleClass("open");
             });
+
+            $("#rsvp").submit(function(event){
+                var formData = {
+                    _token: "{{ csrf_token() }}",
+                    name: "{{ $name }}",
+                    rsvp_join: $('input[name="rsvp_join"]:checked').val(),
+                    rsvp_count: $("#rsvp_count").val(),
+                    rsvp_reason: $("#rsvp_reason").val(),
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/save-rsvp",
+                    data: formData,
+                    dataType: "json",
+                    encoded: true,
+                }).done(function(res){
+                    if(res.status == 'Success'){
+                        console.log('Success')
+                        $("#modal-opened").toggle()
+                    }
+                    else{
+                        console.log('Error')
+                    }
+                });
+
+                event.preventDefault();
+            })
+
+            $('.rsvp-close').click(function(){
+                $("#modal-opened").toggle()
+            })
+
+            $('.message-close').click(function(){
+                $("#modal-opened-2").toggle()
+            })
+
+            $("#message").submit(function(event){
+                var formData = {
+                    _token: "{{ csrf_token() }}",
+                    name: "{{ $name }}",
+                    message_name: $("#message_name").val(),
+                    message_from: $("#message_from").val(),
+                    message_data: $("#message_data").val(),
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/save-message",
+                    data: formData,
+                    dataType: "json",
+                    encoded: true,
+                }).done(function(res){
+                    console.log(res);
+                    if(res.status == 'Success'){
+                        data = res.data;
+                        if(data.message_name !== null && data.message_from !== null){
+                            add_message(data);
+                        }
+                        $("#modal-opened-2").toggle()
+                    }
+                    else{
+                        console.log('Error')
+                    }
+                });
+
+                event.preventDefault();
+            })
         });
         // scroll function
         function scrollToID(id, speed) {

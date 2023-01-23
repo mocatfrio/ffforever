@@ -41,8 +41,8 @@
                             <p class="font-open-sans text-white font-12 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
                             <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $name }}</h3>
-                            <div class="primary-white-button animated zoomIn">
-                                <a href='#s' class="scroll-link pointer start" data-id="name">Buka Undangan</a>
+                            <div class="">
+                                <a href='#s' class="scroll-link pointer start link-1" data-id="name">Buka Undangan</a>
                             </div>
                         </div>
                     </div>
@@ -58,8 +58,8 @@
                             <p class="font-open-sans text-white font-14 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
                             <h3 class="font-now text-white font-20 p-b-30">{{ $name }}</h3>
-                            <div class="primary-white-button">
-                                <a href='' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                            <div class="">
+                                <a href='#s' class="scroll-link pointer start link-1" data-id="name">Buka Undangan</a>
                             </div>
                         </div>
                     </div>
@@ -75,8 +75,8 @@
                             <p class="font-open-sans text-white font-14 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
                             <h3 class="font-now text-white font-20 p-b-30">{{ $name }}</h3>
-                            <div class="primary-white-button">
-                                <a href='' class="scroll-link pointer" data-id="name">Buka Undangan</a>
+                            <div class="">
+                                <a href='#s' class="scroll-link pointer start link-1" data-id="name">Buka Undangan</a>
                             </div>
                         </div>
                     </div>
@@ -92,8 +92,8 @@
                             <p class="font-open-sans text-white font-12 m-t-200 animated zoomIn">Yth. Bapak / Ibu /
                                 Saudara / i</p>
                             <h3 class="font-now text-white font-20 p-b-30 animated zoomIn">{{ $name }}</h3>
-                            <div class="primary-white-button animated zoomIn">
-                                <a href='#s' class="scroll-link pointer start" data-id="name">Buka Undangan</a>
+                            <div class="">
+                                <a href='#s' class="scroll-link pointer start link-1" data-id="name">Buka Undangan</a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     <div class="atcb" style="display:none;">
-                        <div class="atcb" style="display:none;">
+                        <div class="atcb " style="display:none;">
                             {
                                 "name":"Firda & Fuad Wedding",
                                 "description":"Kepada Yth. Kehadiran dan Do'a restu Bapak/Ibu/Saudara/i untuk acara pernikahan kami sangatlah berarti | Pernikahan Firda & Fuad | Sabtu, 11 Februari 2022",
@@ -279,6 +279,47 @@
         </div>
     </div>
     <!-- Date End -->
+
+    <!-- RSVP -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row px-4 g-5">
+                <div class="col-12 col-lg-12 px-4 wow fadeInUp text-center" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <form id="rsvp" method="POST" action="/save-rsvp">
+                            @csrf
+                            <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2 text-center">Buku Tamu</h1>
+                            <p class="font-proxima-nova font-14 mb-3 text-center">Bpk / Ibu / Sdr/i <b>{{ $name }}</b>, Apakah Anda dapat hadir?
+                            </p>
+                            <div class="d-flex"> 
+                                <label class="radio rsvp-true mt-0"> 
+                                    <input class="rsvp" type="radio" name="rsvp_join" value="1"> <span class="text-success"> <i class="fa fa-calendar-check-o" aria-hidden="true"></i> Hadir </span> 
+                                </label> 
+                                <label class="radio rsvp-false mt-0"> 
+                                    <input class="rsvp" type="radio" name="rsvp_join" value="0"> <span class="text-danger"> <i class="fa fa-calendar-times-o" aria-hidden="true"></i> Tidak </span> 
+                                </label> 
+                            </div>
+                            <div class="form-reason mb-4" hidden>
+                                <textarea type="text" id="rsvp_reason" name="rsvp_reason" class="form-control" id="karena" placeholder="Karena..." rows="3"></textarea>
+                            </div>
+                            <div class="form-count" hidden>
+                            <p class="font-proxima-nova font-14 mb-3">Berapa orang?
+                                <select class="form-select form-select-lg mb-4" id="rsvp_count" name="jumlah" aria-label="Select">
+                                    <option selected>Select</option>
+                                    <option value="1">Satu</option>
+                                    <option value="2">Dua</option>
+                                </select>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" id="btn-submit" class="link-1" style="width:100%; border-radius:5px">Kirim</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- end rsvp --}}
 
     <!-- Protokol kesehatan  -->
     <div class="container-xxl py-5">
@@ -354,44 +395,46 @@
             <div class="row px-4 g-5">
                 <div class="col-12 col-lg-6 px-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="h-100">
-                        <form method="POST" action="/save-rsvp">
+                        <form id="message" method="POST" action="/save-rsvp">
                             @csrf
-                            <h6 class="bg-white">
+                            {{-- <h6 class="bg-white">
                                 <img class="img-fluid rounded mb-4" src="{{ asset('images/logo.png') }}"
                                     style="width: 30px; height: 30px">
-                            </h6>
+                            </h6> 
                             <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2">Buku Tamu</h1>
                             <p class="font-proxima-nova font-14 mb-3">Bpk / Ibu / Sdr/i <b>{{ $name }}</b>, Apakah Anda dapat hadir?
                             </p>
-                            <div class="form-check form-check-inline mb-2">
-                                <input class="form-check-input" type="radio" name="rsvp_join" id="ya"
-                                    value="1">
-                                <label class="form-check-label font-proxima-nova font-14" for="ya">Ya</label>
+                            <div class="d-flex"> 
+                                <label class="radio rsvp-true mt-0"> 
+                                    <input class="rsvp" type="radio" name="rsvp_join" value="1"> <span class="text-success"> <i class="fa fa-calendar-check-o" aria-hidden="true"></i> Hadir </span> 
+                                </label> 
+                                <label class="radio rsvp-false mt-0"> 
+                                    <input class="rsvp" type="radio" name="rsvp_join" value="0"> <span class="text-danger"> <i class="fa fa-calendar-times-o" aria-hidden="true"></i> Tidak </span> 
+                                </label> 
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="rsvp_join" id="tidak"
-                                    value="0">
-                                <label class="form-check-label font-proxima-nova font-14" for="tidak">Tidak</label>
+                            <div class="form-reason mb-4" hidden>
+                                <textarea type="text" id="rsvp_reason" name="rsvp_reason" class="form-control" id="karena" placeholder="Karena..." rows="3"></textarea>
                             </div>
-                            <div class="mb-4">
-                                <textarea type="text" name="rsvp_reason" class="form-control" id="karena" placeholder="Karena..." rows="3"></textarea>
-                            </div>
-                            <p class="font-proxima-nova font-14 mb-3">Berapa orang?</p>
-                            <select class="form-select form-select-lg mb-4" name="jumlah" aria-label="Select">
-                                <option selected>Select</option>
-                                <option value="1">Satu</option>
-                                <option value="2">Dua</option>
-                            </select>
-                            <p class="font-proxima-nova font-14 mb-3">Doa & Ucapan</p>
-                            <input type="text" name="message_name" class="form-control" placeholder="Nama">
+                            <div class="form-count" hidden>
+                            <p class="font-proxima-nova font-14 mb-3">Berapa orang?
+                                <select class="form-select form-select-lg mb-4" id="rsvp_count" name="jumlah" aria-label="Select">
+                                    <option selected>Select</option>
+                                    <option value="1">Satu</option>
+                                    <option value="2">Dua</option>
+                                </select>
+                            </div> --}}
+                            <h1 class="font-now text-uppercase ls-2 font-20 mb-4 mt-2 text-center">Doa & Ucapan</h1>
+                            <input type="text" id="message_name" name="message_name" class="form-control" placeholder="Nama" required>
                             <br>
-                            <input type="text" name="message_from" class="form-control" placeholder="Dari">
+                            <input type="text" id="message_from" name="message_from" class="form-control" placeholder="Dari">
                             <br>
                             <input name="name" class="hidden" value={{ $name }}>
                             <div class="mb-4">
-                                <textarea type="text" class="form-control" name="message_data" id="karena" placeholder="Doa dan ucapan" rows="3"></textarea>
+                                <textarea type="text" class="form-control" name="message_data" id="message_data" placeholder="Doa dan ucapan" rows="3" required></textarea>
                             </div>
-                            <button type="submit" id="btn-submit" class="btn btn-lg btn-secondary text-white font-30">Kirim</button>
+                            <div style="text-align:center">
+                                <button type="submit" id="btn-submit" class="link-1" style="width:100%; border-radius:5px">Kirim</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -435,6 +478,54 @@
         </div>
     </div>
     <!-- Terima Kasih End -->
+
+    {{-- modal popup --}}
+    <div class="modal modal-container" id="modal-opened">
+        <div class="modal-content" style="color:#fff !important">
+      
+          <div class="modal__details">
+            <div class="modal__title">RSVP Terkirim!</div>
+            <div class="modal__description">Terima kasih telah mengisi buku tamu. Kehadiran anda sangat berarti bagi kami.</div>
+          </div>
+      
+          {{-- <div class="modal__text">Kehadiran anda sangat berarti bagi kami</div> --}}
+      
+          <button class="modal__btn rsvp-close">Mantap! lanjutkan..</button>
+      
+          <a href="#modal-closed" class="rsvp-close link-2"></a>
+      
+        </div>
+      </div>
+      {{-- end modal popup --}}
+
+      {{-- modal popup --}}
+    <div class="modal modal-container" id="modal-opened-2">
+        <div class="modal-content" style="color:#fff !important">
+      
+          <div class="modal__details">
+            <div class="modal__title">Pesan Terkirim!</div>
+            <div class="modal__description">Terima kasih telah mengirimkan ucapan. Doa anda sangat berarti bagi kami.</div>
+          </div>
+      
+          {{-- <div class="modal__text">Kehadiran anda sangat berarti bagi kami</div> --}}
+      
+          <button class="modal__btn message-close">Tutup</button>
+      
+          <a href="#modal-closed-2" class="message-close link-2"></a>
+      
+        </div>
+      </div>
+      {{-- end modal popup --}}
+
+
+      {{-- wishes box message --}}
+        <div id="message-template" hidden class="testimonial-item bg-light rounded p-4 mb-3">
+            <p id="tpl-time" class="font-now font-10 mb-2 pull-right"></p>
+            <h5 id="tpl-name" class="font-now font-14 mb-1"></h5>
+            <p id="tpl-from" tplclass="font-now font-12 mb-2"></p>
+            <p id="tpl-message" class="font-proxima-nova font-12 mb-0"></p>
+        </div>
+    {{-- end wishes box message --}}
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-square back-to-top">
@@ -491,6 +582,17 @@
             input.checked = true;
             audio.play();
         })
+
+        $('.rsvp').click(function(){
+            console.log($(this).val());
+            if($(this).val()=='1'){
+                $('.form-reason').attr('hidden',true)
+                $('.form-count').attr('hidden',false)
+            }else{
+                $('.form-reason').attr('hidden',false)
+                $('.form-count').attr('hidden',true)
+            }
+        });
 
     </script>
 @endsection
