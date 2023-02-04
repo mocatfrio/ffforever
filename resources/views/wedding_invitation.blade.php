@@ -47,7 +47,7 @@
                 </p>
                 <h3 class="name m-b-40 animated zoomIn wow" data-wow-delay="0.1s">{{ $name }}</h3>
                 <div class="d-flex justify-content-center m-b-30">
-                    <a href='#header' class="btn modalx-btn open-top-cover animated zoomIn wow" data-wow-delay="0.1s">
+                    <a href='#main-content' class="btn modalx-btn open-top-cover animated zoomIn wow" data-wow-delay="0.1s">
                         <i class="fa fa-envelope fa-lg m-r-10"></i>
                         Buka Undangan
                     </a>
@@ -83,10 +83,9 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
-                                            acara resepsi
-                                            pernikahan
-                                            kami</p>
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Tanpa mengurangi rasa hormat, kami
+                                            mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara
+                                            pernikahan kami</p>
                                         <hr>
                                     </div>
                                 </div>
@@ -115,10 +114,9 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
-                                            acara resepsi
-                                            pernikahan
-                                            kami</p>
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Tanpa mengurangi rasa hormat, kami
+                                            mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara
+                                            pernikahan kami</p>
                                         <hr>
                                     </div>
                                 </div>
@@ -146,10 +144,9 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
-                                            acara resepsi
-                                            pernikahan
-                                            kami</p>
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Tanpa mengurangi rasa hormat, kami
+                                            mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara
+                                            pernikahan kami</p>
                                         <hr>
                                     </div>
                                 </div>
@@ -177,10 +174,9 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
-                                            acara resepsi
-                                            pernikahan
-                                            kami</p>
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Tanpa mengurangi rasa hormat, kami
+                                            mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara
+                                            pernikahan kami</p>
                                         <hr>
                                     </div>
                                 </div>
@@ -626,8 +622,6 @@
                         kami.</div>
                 </div>
 
-                {{-- <div class="modal__text">Kehadiran anda sangat berarti bagi kami</div> --}}
-
                 <button class="modal__btn rsvp-close">Mantap! lanjutkan..</button>
 
                 <a href="#modal-closed" class="rsvp-close link-2"></a>
@@ -795,7 +789,9 @@
             })
 
             $('.rsvp-close').click(function() {
-                $("#modal-opened").toggle()
+                $("#modal-opened").toggle();
+                $('#kehadiran-submit').attr('hidden', true);
+                $('.form-count').attr('hidden', true);
             })
 
             $('.message-close').click(function() {
