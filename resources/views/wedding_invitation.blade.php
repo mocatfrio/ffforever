@@ -821,7 +821,7 @@
                     console.log(res);
                     if (res.status == 'Success') {
                         data = res.data;
-                        if (data.message_name !== null && data.message_from !== null) {
+                        if (data.message_name !== null && data.message_data !== null) {
                             add_message(data);
                         }
                         $("#modal-opened-2").toggle()
