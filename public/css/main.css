@@ -203,8 +203,8 @@ span {
 
 @font-face {
   font-family: "DancingScript";
-  src: url(../fonts/DancingScript-Regular.ttf) format("woff2");
-  font-weight: normal;
+  src: url(../fonts/DancingScript-Medium.ttf) format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -14385,7 +14385,7 @@ label {
 .carousel-caption .line-1,
 .carousel-caption .date {
   font-family: "Cinzel";
-  font-size: calc(1rem + .3vw);
+  font-size: calc(1.2rem + .3vw);
   font-weight: 400;
   letter-spacing: 0.3125rem;
   color: var(--white);
@@ -14395,12 +14395,13 @@ label {
 .carousel-caption .line-2 {
   font-family: "DancingScript";
   font-size: calc(5rem + .3vw);
+  font-weight: 400;
   color: var(--white);
 }
 
 .carousel-caption .line-3 {
   font-family: "Niramit";
-  font-size: calc(1rem + .3vw);
+  font-size: calc(1.2rem + .3vw);
   font-weight: 400;
   color: var(--white);
   padding-top: 3rem;
@@ -14408,7 +14409,7 @@ label {
 
 .carousel-caption .line-4 {
   font-family: "ProximaNova";
-  font-size: calc(1rem + .3vw);
+  font-size: calc(1.2rem + .3vw);
   font-weight: 400;
   color: var(--white);
 }
@@ -14478,7 +14479,7 @@ label {
 .modalx-content-info .line-1,
 .modalx-content-info .date {
   font-family: "Cinzel";
-  font-size: calc(1rem + .3vw);
+  font-size: calc(1.2rem + .3vw);
   font-weight: 400;
   letter-spacing: 0.3125rem;
   color: var(--black);
@@ -14488,13 +14489,14 @@ label {
 .modalx-content-info .line-2 {
   font-family: "DancingScript";
   font-size: calc(5rem + .3vw);
+  font-weight: 400;
   color: var(--black);
 }
 
 .modalx-content-info .line-3 {
   font-family: "Cinzel";
   font-weight: 400;
-  font-size: calc(1rem + .3vw);
+  font-size: calc(1.2rem + .3vw);
   color: var(--black);
   letter-spacing: 1px;
 }
@@ -14517,12 +14519,13 @@ label {
   padding: 0.9375rem 1.5625rem;
   box-shadow: none;
   margin: 0;
-  font-size: calc(1rem + .3vw);
+  font-size: calc(1.2rem + .3vw);
   color: var(--light);
   background: var(--background);
   border-radius: 0.625rem;
   padding: 0.625rem 1.5625rem;
   transition: .2s;
+  border: 1px solid var(--grey);
 }
 
 #date-place .atcb-text {
@@ -14547,7 +14550,7 @@ label {
 
 @media (max-width: 576px) {
   .modalx-logo {
-    width: 30%;
+    width: 40%;
     margin-bottom: 1.5rem;
   }
 
@@ -14566,7 +14569,7 @@ label {
 
 @media (min-width: 576px) {
   .modalx-logo {
-    width: 30%;
+    width: 40%;
     margin-bottom: 1.5rem;
   }
 
@@ -14652,11 +14655,14 @@ label {
 .ff-title-secondary {
   font-family: "DancingScript";
   font-size: 3rem;
+  font-weight: 400;
 }
+
 
 .ff-title-big {
   font-family: "DancingScript";
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .ff-subtitle {
@@ -14666,30 +14672,31 @@ label {
 }
 
 .ff-description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: "ProximaNova";
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .ff-description-bold {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: "ProximaNova";
   font-weight: 700;
 }
 
 .ff-footer {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: "ProximaNova";
+  font-weight: 400;
 }
 
 .testimonial-item .name {
   font-family: "Now";
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .testimonial-item .from {
   font-family: "Now";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .testimonial-item .date {
@@ -14699,5 +14706,5 @@ label {
 
 .testimonial-item .message {
   font-family: "ProximaNova";
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }

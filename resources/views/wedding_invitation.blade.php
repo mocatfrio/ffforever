@@ -357,7 +357,7 @@
                         <div class="col-12 col-lg-6 text-center wow fadeInUp" data-wow-delay="0.5s">
                             <div class="h-100">
                                 <h1 class="ff-title">AKAD</h1>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-center mb-5">
                                     <div class="col-12 col-lg-9">
                                         <hr>
                                         <p class="font-cinzel text-uppercase font-16 mb-0 animated slideInLeft wow"
@@ -375,7 +375,7 @@
                         <div class="col-12 col-lg-6 text-center wow fadeInUp" data-wow-delay="0.5s">
                             <div class="h-100">
                                 <h1 class="ff-title">RESEPSI</h1>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-center mb-5">
                                     <div class="col-12 col-lg-9">
                                         <hr>
                                         <p class="font-cinzel text-uppercase font-16 mb-0 animated slideInLeft wow"
@@ -604,7 +604,7 @@
                     <div class="team-text">
                         <div class="team-title">
                             <h1 class="ff-title-big m-b-100">Terima Kasih</h1>
-                            <p class="ff-footer mb-0">Created with love by <b>Fu</b> and
+                            <p class="ff-footer mb-0">Created with ❤ by <b>Fu</b> and
                                 <b>Fir</b> | Copyright 2023 <b>&copy; FFForever</b> <br> All Right
                                 Reserved.
                             </p>
