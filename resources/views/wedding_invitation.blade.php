@@ -825,6 +825,9 @@
                             add_message(data);
                         }
                         $("#modal-opened-2").toggle()
+                        $("#message_name").val('');
+                        $("#message_from").val('');
+                        $("#message_data").val('');
                     } else {
                         console.log('Error')
                     }
