@@ -422,8 +422,8 @@
                                 <p class="ff-description my-4 text-center">Bapak/Ibu/Saudara/i
                                     <b>{{ $name }}</b>, apakah Anda dapat hadir?
                                 </p>
-                                <div class="d-flex">
-                                    <label class="radio rsvp-true mt-0 m-r-20">
+                                <div class="d-flex mb-4">
+                                    <label class="radio rsvp-true mt-0">
                                         <input class="rsvp" type="radio" name="rsvp_join" value="1"> <span
                                             class="text-pink"> <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                                             Hadir </span>
@@ -434,13 +434,13 @@
                                             Tidak </span>
                                     </label>
                                 </div>
-                                <div class="form-reason mb-5 mt-3" hidden>
+                                <div class="form-reason mt-3" hidden>
                                     <textarea type="text" id="rsvp_reason" name="rsvp_reason" class="form-control" id="karena"
                                         placeholder="Karena..." rows="3"></textarea>
                                 </div>
                                 <div class="form-count" hidden>
-                                    <p class="ff-description my-4">Berapa orang yang akan hadir?
-                                        <select class="form-select form-select-lg mb-4 mt-3" id="rsvp_count" name="jumlah"
+                                    <p class="ff-description mb-4">Berapa orang yang akan hadir?
+                                        <select class="form-select form-select-lg mb-5 mt-3" id="rsvp_count" name="jumlah"
                                             aria-label="Select">
                                             <option selected value="1">Satu</option>
                                             <option value="2">Dua</option>
@@ -467,7 +467,7 @@
                             style="width: 50px; height: 50px">
                     </h6>
                     <h1 class="ff-title">Protokol Kesehatan</h1>
-                    <p class="ff-description my-4">Tanpa mengurangi rasa hormat, dikarenakan situasi yang sedang
+                    <p class="ff-description mt-4 mb-5">Tanpa mengurangi rasa hormat, dikarenakan situasi yang sedang
                         terjadi ditengah <b>pandemi Covid-19</b> ini kami memohon maaf karena acara akan diselenggarakan
                         sesuai
                         peraturan dan himbauan pemerintah.</p>

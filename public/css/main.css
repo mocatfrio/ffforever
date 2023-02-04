@@ -14049,6 +14049,10 @@ label.radio span {
   /* Animation */
 }
 
+label.radio.rsvp-true {
+  margin-right: 3rem;
+}
+
 label.radio span:hover {
   background-color: var(--grey);
   transform: scale(1.1);
@@ -14673,7 +14677,7 @@ label {
 }
 
 .ff-footer {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "ProximaNova";
 }
 
