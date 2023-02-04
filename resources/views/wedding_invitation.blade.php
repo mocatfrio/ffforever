@@ -292,7 +292,7 @@
                             <p class="font-proxima-nova font-16 animated wow slideInRight" data-wow-delay="0.1s">
                                 <b>Ar-Rum: 21</b></p>
                         </div>
-                        <div class="flex-col-c-m p-l-15 p-r-15 my-5">
+                        <div class="flex-col-c-m p-l-15 p-r-15 my-5" style="text-align: -webkit-center;">
                             <div class="flex-w flex-c-m cd100">
                                 <div class="col">
                                     <div class="flex-col-c-m circle m-2">
@@ -442,12 +442,11 @@
                                     <p class="font-proxima-nova font-16 mb-5 mt-3">Berapa orang yang akan hadir?
                                         <select class="form-select form-select-lg mb-4 mt-3" id="rsvp_count" name="jumlah"
                                             aria-label="Select">
-                                            <option selected>Select</option>
-                                            <option value="1">Satu</option>
+                                            <option selected value="1">Satu</option>
                                             <option value="2">Dua</option>
                                         </select>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center" id="kehadiran-submit" hidden>
                                     <button type="submit" id="btn-submit" class="link-1"
                                         style="width:100%; border-radius:5px">Kirim</button>
                                 </div>
@@ -710,10 +709,8 @@
         $('.rsvp').click(function() {
             console.log($(this).val());
             if ($(this).val() == '1') {
-                $('.form-reason').attr('hidden', true)
                 $('.form-count').attr('hidden', false)
             } else {
-                $('.form-reason').attr('hidden', false)
                 $('.form-count').attr('hidden', true)
             }
         });
@@ -802,6 +799,10 @@
 
             $('.message-close').click(function() {
                 $("#modal-opened-2").toggle()
+            })
+
+            $('.rsvp').click(function() {
+                $('#kehadiran-submit').attr('hidden', false);
             })
 
             $("#message").submit(function(event) {
