@@ -599,7 +599,7 @@
                         src="{{ asset('images/logo.png') }}" alt="">
                     <div class="team-text">
                         <div class="team-title">
-                            <h1 class="font-dancing-script font-50">Terima Kasih</h1>
+                            <h1 class="font-dancing-script font-50 m-b-100">Terima Kasih</h1>
                             <p class="font-proxima-nova font-12 mb-0">Created with love by <b>Fu</b> and
                                 <b>Fir</b> | Copyright 2023 <b>&copy; FFForever</b> <br> All Right
                                 Reserved.</p>
