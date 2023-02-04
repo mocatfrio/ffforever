@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 
     <!-- Fonts  -->
+    <link rel="stylesheet" href="{{ asset('vendor/font-awesome/css/fontawesome.min.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -16,10 +17,7 @@
     <link rel="stylesheet" href="{{ asset('css/main_new.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/fontAwesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero-slider.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl-carousel.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}">
 
     <!-- Vendor  -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">
@@ -46,128 +44,7 @@
     <script src="{{ asset('js/main.js') }}"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-
-        function add_message(data){
-            console.log("added message")
-            var tpl = $('#message-template').clone();
-            tpl.attr('hidden',false)
-            tpl.find('#tpl-name').text(data.message_name);
-            tpl.find('#tpl-time').text(data.timestamp);
-            tpl.find('#tpl-from').text(data.message_from);
-            tpl.find('#tpl-message').text(data.message_data);
-            tpl.insertBefore('.testimonial-item:first')
-        }
-
-        $(document).ready(function() {
-
-            // $('body').addClass('stop-scrolling')
-            // navigation click actions 
-            $('.scroll-link').on('click', function(event) {
-                event.preventDefault();
-                var sectionID = $(this).attr("data-id");
-                scrollToID('#' + sectionID, 750);
-            });
-            // scroll to top action
-            $('.scroll-top').on('click', function(event) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 'slow');
-            });
-            // mobile nav toggle
-            $('#nav-toggle').on('click', function(event) {
-                event.preventDefault();
-                $('#main-nav').toggleClass("open");
-            });
-
-            $("#rsvp").submit(function(event){
-                var formData = {
-                    _token: "{{ csrf_token() }}",
-                    name: "{{ $name }}",
-                    rsvp_join: $('input[name="rsvp_join"]:checked').val(),
-                    rsvp_count: $("#rsvp_count").val(),
-                    rsvp_reason: $("#rsvp_reason").val(),
-                };
-
-                $.ajax({
-                    type: "POST",
-                    url: "/save-rsvp",
-                    data: formData,
-                    dataType: "json",
-                    encoded: true,
-                }).done(function(res){
-                    if(res.status == 'Success'){
-                        console.log('Success')
-                        $("#modal-opened").toggle()
-                    }
-                    else{
-                        console.log('Error')
-                    }
-                });
-
-                event.preventDefault();
-            })
-
-            $('.rsvp-close').click(function(){
-                $("#modal-opened").toggle()
-            })
-
-            $('.message-close').click(function(){
-                $("#modal-opened-2").toggle()
-            })
-
-            $("#message").submit(function(event){
-                var formData = {
-                    _token: "{{ csrf_token() }}",
-                    name: "{{ $name }}",
-                    message_name: $("#message_name").val(),
-                    message_from: $("#message_from").val(),
-                    message_data: $("#message_data").val(),
-                };
-
-                $.ajax({
-                    type: "POST",
-                    url: "/save-message",
-                    data: formData,
-                    dataType: "json",
-                    encoded: true,
-                }).done(function(res){
-                    console.log(res);
-                    if(res.status == 'Success'){
-                        data = res.data;
-                        if(data.message_name !== null && data.message_from !== null){
-                            add_message(data);
-                        }
-                        $("#modal-opened-2").toggle()
-                    }
-                    else{
-                        console.log('Error')
-                    }
-                });
-
-                event.preventDefault();
-            })
-        });
-        // scroll function
-        function scrollToID(id, speed) {
-            var offSet = 50;
-            var targetOffset = $(id).offset().top - offSet;
-            var mainNav = $('#main-nav');
-            $('html,body').animate({
-                scrollTop: targetOffset
-            }, speed);
-            if (mainNav.hasClass("open")) {
-                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-                mainNav.removeClass("open");
-            }
-        }
-        if (typeof console === "undefined") {
-            console = {
-                log: function() {}
-            };
-        }
-    </script>
+   
     <script src="{{ asset('vendor/jquery/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/js/popper.js') }}"></script>
     <script src="{{ asset('vendor/select2/select2.min.js') }}"></script>

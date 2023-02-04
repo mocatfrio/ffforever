@@ -7,7 +7,7 @@
     <div class="slider">
         <div class="slider-item bg-img" style="background-image: url('images/foto1.jpg');"></div>
         <div class="slider-item bg-img" style="background-image: url('images/foto2.jpg');"></div>
-        <div class="slider-item bg-img" style="background-image: url('images/foto11.jpg');"></div>
+        <div class="slider-item bg-img" style="background-image: url('images/foto12.jpg');"></div>
         <div class="slider-item bg-img" style="background-image: url('images/foto3.jpg');"></div>
     </div>
 

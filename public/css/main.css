@@ -5,12 +5,15 @@ Created with love by Mocatfrio <3
 
 :root {
   --white: #ffffff;
+  --grey: #eeeeee;
   --black: #000000;
-  --pink: #ffd1dc;
-  --primary: #009CFF;
-  --secondary: #777777;
+  --blue: #3594d4;
+
+  --pink: #d86195;
+  --secondary: #a6bfda;
+
   --light: #F8F8F8;
-  --dark: #252525;
+  --dark-blue: #404e90;
 }
 
 *,
@@ -213,6 +216,70 @@ span {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Niramit";
+  src: url(../fonts/Niramit-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Niramit";
+  src: url(../fonts/Niramit-Medium.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Niramit";
+  src: url(../fonts/Niramit-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Niramit";
+  src: url(../fonts/Niramit-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-Regular.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-Medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-SemiBold.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-Bold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-ExtraBold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* [ FONT FAMILY ] */
 
 .font-proxima {
@@ -231,6 +298,15 @@ span {
   font-family: "OpenSans";
 }
 
+.font-cinzel{
+  font-family: "Cinzel";
+  font-weight: 400;
+}
+
+.font-niramit{
+  font-family: "Niramit";
+  font-weight: 400;
+}
 
 /* [ FONT COLOR ] */
 
@@ -13879,32 +13955,37 @@ input#music {
 .music {
   background-image: url(../images/music.svg);
   position: fixed;
-  width:50px;
+  width: 50px;
   height: 50px;
   border-radius: 25px;
-  z-index:10;
-  bottom:10px;
-  left:10px;
+  z-index: 10;
+  bottom: 10px;
+  left: 10px;
   transition: .5s;
   cursor: pointer;
 }
 
-#music:checked + .music {
+#music:checked+.music {
   animation: rotating 8s infinite linear;
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+  {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -13913,6 +13994,7 @@ input#music {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -13923,19 +14005,21 @@ input#music {
 }
 
 
-.card{
-  width:300px;
-  background-color:#fff;
-  border:none;
-  border-radius: 12px
+/* RSVP  */
 
+.card {
+  width: 300px;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px
 }
-label.radio{
+
+label.radio {
   cursor: pointer;
   width: 100%;
 }
 
-label.radio input{
+label.radio input {
   position: absolute;
   top: 0;
   left: 0;
@@ -13943,32 +14027,38 @@ label.radio input{
   pointer-events: none
 }
 
-label.radio span{
-  font-size: 12px;
+label.radio span {
+  font-family: "Cinzel";
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
-  padding: 7px 14px;
-  border: 2px solid #eee;
+  padding: 15px 14px;
+  background-color: white;
+  border: 1px solid var(--dark-blue);
   display: inline-block;
   border-radius: 10px;
   width: 100%;
-  height: 48px;
-  line-height: 27px
+  line-height: 27px;
+  transition: transform .2s; /* Animation */
 }
 
-label.radio input:checked+span{
+label.radio span:hover {
+  background-color: var(--grey);
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+label.radio input:checked+span {
   color: #fff !important;
   border-radius: 9px;
-  height: 48px;
   line-height: 27px
 }
 
-.rsvp-true input:checked+span{
-  background-color: #28a745;
+.rsvp-true input:checked+span {
+  background-color: var(--pink);
 }
 
-.rsvp-false input:checked+span{
-  background-color: #dc3545;
+.rsvp-false input:checked+span {
+  background-color: var(--blue);
 }
 
 /* modal */
@@ -13976,7 +14066,7 @@ label.radio input:checked+span{
 
 body {
   --light: hsl(0, 0%, 100%);
-  --background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));
+  --background: linear-gradient(to right bottom, #404e90, #ffb2c0);
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
   background: linear-gradient(to bottom, hsl(236, 50%, 98%), hsl(236, 50%, 94%));
