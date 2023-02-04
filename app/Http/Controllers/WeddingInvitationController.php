@@ -13,8 +13,9 @@ class WeddingInvitationController extends Controller
 		return view('wedding_invitation', 
 		[
 			'allMessages' => $allMessages->toArray(),
-			'name' => $name
-		]);	}
+			'name' => str_replace("-"," ",$name)
+		]);	
+	}
 
 	public function save_rsvp(Request $request) {
 
