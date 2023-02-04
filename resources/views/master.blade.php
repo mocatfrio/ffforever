@@ -7,7 +7,7 @@
     <meta name="csrf-token" value="{{ csrf_token() }}" />
     <title>F&F @yield('title')</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
-    <meta property="og:image" content="{{ asset('images/logo.png') }}" />
+    <meta property="og:image" content="{{ asset('images/favicon.ico') }}" />
     <meta property="og:url" content="https://ffforever.fun/" />
     <meta property="og:title" content="F&F Wedding Invitation" />
 
