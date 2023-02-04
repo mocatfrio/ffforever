@@ -82,12 +82,12 @@ label {
 }
 
 #header-carousel .carousel-indicators [data-bs-target] {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   text-indent: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   border: 1px solid #FFFFFF;
-  border-radius: 60px;
+  border-radius: 3.75rem;
   overflow: hidden;
 }
 
@@ -123,54 +123,6 @@ label {
     font-weight: 500;
     transition: .5s;
   }
-
-  .btn.btn-blue {
-    color: #FFFFFF;
-  }
-
-  .btn-square {
-    width: 38px;
-    height: 38px;
-  }
-
-  .btn-sm-square {
-    width: 32px;
-    height: 32px;
-  }
-
-  .btn-lg-square {
-    width: 48px;
-    height: 48px;
-  }
-
-  .btn-square,
-  .btn-sm-square,
-  .btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-  }
-
-  .back-to-top {
-    position: fixed;
-    display: none;
-    right: 30px;
-    bottom: 30px;
-    z-index: 99;
-    background-color: var(--pink);
-    border-color: var(--pink);
-    cursor: pointer;
-    border-radius: 50%;
-  }
-
-}
-
-.circle-blue {
-  border: 1px solid var(--blue) !important;
-  padding: 10px;
-  border-radius: 50%;
 }
 
 .all-wishes {
@@ -181,30 +133,12 @@ label {
 
 .wishes-box {
   overflow-y: scroll;
-  padding: 15px;
+  padding: 0.9375rem;
   width: 100%;
   max-height: 500px;
   background-color: #fff;
   z-index: 0;
   position: relative;
-}
-
-.blue-white-button a {
-  display: inline-block;
-  background-color: #fff;
-  font-size: 12px;
-  padding: 12px 18px;
-  color: #121212;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 20px;
-  text-shadow: none;
-}
-
-.blue-white-button a:hover {
-  text-decoration: none;
 }
 
 .d-none {
@@ -225,8 +159,6 @@ label {
   user-drag: none;
 }
 
-
-
 /* Carousel Caption  */
 .carousel-caption .line-1,
 .carousel-caption .date {
@@ -240,7 +172,7 @@ label {
 
 .carousel-caption .line-2 {
   font-family: "DancingScript";
-  font-size: 80px;
+  font-size: 5rem;
   color: var(--white);
 }
 
@@ -261,7 +193,7 @@ label {
 .carousel-caption .name {
   font-family: "Cinzel";
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: var(--white);
 }
 
@@ -300,7 +232,7 @@ label {
   width: 100%;
   height: 100%;
   z-index: 2002;
-  top: 10px;
+  top: 0.625rem;
   color: #fff;
   left: 0;
 }
@@ -322,7 +254,7 @@ label {
 .modalx-content-info .line-1,
 .modalx-content-info .date {
   font-family: "Cinzel";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 5px;
   color: var(--black);
@@ -331,14 +263,14 @@ label {
 
 .modalx-content-info .line-2 {
   font-family: "DancingScript";
-  font-size: 80px;
+  font-size: 5rem;
   color: var(--black);
 }
 
 .modalx-content-info .line-3 {
   font-family: "Cinzel";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--black);
   letter-spacing: 1px;
 }
@@ -346,7 +278,7 @@ label {
 .modalx-content-info .name {
   font-family: "Cinzel";
   font-weight: 600;
-  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 .modalx-content-info hr {
@@ -358,14 +290,14 @@ label {
   font-family: "Cinzel";
   font-weight: 300;
   text-transform: uppercase;
-  padding: 15px 25px;
+  padding: 0.9375rem 1.5625rem;
   box-shadow: none;
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--light);
   background: var(--background);
-  border-radius: 10px;
-  padding: 10px 25px;
+  border-radius: 0.625rem;
+  padding: 0.625rem 1.5625rem;
   transition: .2s;
 }
 
@@ -395,8 +327,8 @@ label {
   }
 
   #date-place .circle {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border: 1px solid var(--blue);
   }
 
@@ -409,8 +341,8 @@ label {
   }
 
   #date-place .circle {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border: 1px solid var(--blue);
   }
 }
@@ -422,8 +354,8 @@ label {
   }
 
   #date-place .circle {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     border: 1px solid var(--blue);
   }
 }
@@ -435,52 +367,21 @@ label {
   }
 
   #date-place .circle {
-    width: 155px;
-    height: 155px;
+    width: 9.6875rem;
+    height: 9.6875rem;
     border: 1px solid var(--blue);
   }
 }
 
-/* Buttons  */
-.ff-btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 15px;
-  font-weight: normal;
-  font-family: "Cinzel";
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 100rem;
-}
-
-.ff-btn-blue {
-  color: var(--white);
-  background-color: var(--blue);
-  background-image: none;
-  border-color: var(--blue);
-}
-
 #main-content .form-control,
 #main-content .form-select {
-  padding: 20px 20px;
-  font-size: 16px;
+  padding: 1.25rem 1.25rem;
+  font-size: 1rem;
   border-color: var(--dark-blue);
   color: var(--black);
 }
 #main-content .form-select {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
 }
 
 #main-content .form-control:focus {

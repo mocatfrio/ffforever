@@ -14,10 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets  -->
-    <link rel="stylesheet" href="{{ asset('css/main_new.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/hero-slider.css') }}">
 
     <!-- Vendor  -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">

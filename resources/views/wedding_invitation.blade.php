@@ -8,9 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{ asset('dgcom/lib/animate/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('dgcom/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('dgcom/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -40,7 +37,7 @@
                 <h1 class="line-2 animated slideInRight wow" data-wow-delay="0.1s">Firda
                     & Fuad</h1>
                 <div class="d-flex justify-content-center m-b-40">
-                    <div class="col-lg-4 col-9">
+                    <div class="col-lg-6 col-11">
                         <hr>
                         <p class="date animated slideInLeft wow" data-wow-delay="0.1s">Sabtu, 11 Februari 2023</p>
                         <hr>
@@ -69,9 +66,9 @@
                         <img class="w-100" src="{{ asset('images/foto12.jpg') }}" alt="Image">
                         <div class="carousel-caption">
                             <div class="px-4">
-                                <h4 class="line-1 mb-4 animated zoomIn">The
+                                <h4 class="line-1 animated zoomIn">The
                                     Wedding of</h4>
-                                <h1 class="line-2 mb-4 animated zoomIn">Firda
+                                <h1 class="line-2 my-2 animated zoomIn">Firda
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
@@ -100,9 +97,9 @@
                         <img class="w-100" src="{{ asset('images/foto2.jpg') }}" alt="Image">
                         <div class="carousel-caption">
                             <div class="px-4">
-                                <h4 class="line-1 mb-4 animated zoomIn">The
+                                <h4 class="line-1 animated zoomIn">The
                                     Wedding of</h4>
-                                <h1 class="line-2 mb-4 animated zoomIn">Firda
+                                <h1 class="line-2 my-2 animated zoomIn">Firda
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
@@ -130,9 +127,9 @@
                         <img class="w-100" src="{{ asset('images/foto1.jpg') }}" alt="Image">
                         <div class="carousel-caption">
                             <div class="px-4">
-                                <h4 class="line-1 mb-4 animated zoomIn">The
+                                <h4 class="line-1 animated zoomIn">The
                                     Wedding of</h4>
-                                <h1 class="line-2 mb-4 animated zoomIn">Firda
+                                <h1 class="line-2 my-2 animated zoomIn">Firda
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
@@ -160,9 +157,9 @@
                         <img class="w-100" src="{{ asset('images/foto3.jpg') }}" alt="Image">
                         <div class="carousel-caption">
                             <div class="px-4">
-                                <h4 class="line-1 mb-4 animated zoomIn">The
+                                <h4 class="line-1 animated zoomIn">The
                                     Wedding of</h4>
-                                <h1 class="line-2 mb-4 animated zoomIn">Firda
+                                <h1 class="line-2 my-2 animated zoomIn">Firda
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
@@ -206,7 +203,10 @@
                 <div class="container">
                     <div class="text-center mx-auto mb-5 px-4 wow fadeInUp" data-wow-delay="0.1s"
                         style="max-width: 600px;">
-                        <h1 class="font-cinzel text-uppercase ls-2 font-25 mb-2 my-2 p-t-30">We Are Getting Married!</h1>
+                        <h1 class="ff-title">We Are Getting Married!</h1>
+                        <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Apapun yang menjadi takdirmu, pasti akan mencari jalannya untuk menemukanmu."</p>
+                        <p class="ff-description-bold animated wow slideInRight" data-wow-delay="0.1s">
+                            <b>Ali bin Abi Thalib RA</b></p>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
@@ -215,9 +215,9 @@
                                     src="{{ asset('images/hf.png') }}" alt="">
                                 <div class="team-text">
                                     <div class="team-title">
-                                        <h1 class="font-dancing-script font-35 mb-4 wow slideInLeft"
+                                        <h1 class="ff-title-secondary mb-4 wow slideInLeft"
                                             data-wow-delay="0.2s">Hafara Firdausi, M.Kom.</h1>
-                                        <p class="font-proxima-nova font-16 mb-0 wow slideInLeft" data-wow-delay="0.2s">
+                                        <p class="ff-description mb-0 wow slideInLeft" data-wow-delay="0.2s">
                                             Putri Pertama dari Bpk. Prof.
                                             Dr. H. Wasis, M.Si.
                                             & Ibu
@@ -241,9 +241,9 @@
                                     src="{{ asset('images/fd.png') }}" alt="">
                                 <div class="team-text">
                                     <div class="team-title">
-                                        <h1 class="font-dancing-script font-35 mb-4 wow slideInRight"
+                                        <h1 class="ff-title-secondary mb-4 wow slideInRight"
                                             data-wow-delay="0.3s">Fuad Dary Rosyadi, M.Kom.</h1>
-                                        <p class="font-proxima-nova font-16 mb-0 wow slideInRight" data-wow-delay="0.3s">
+                                        <p class="ff-description mb-0 wow slideInRight" data-wow-delay="0.3s">
                                             Putra Kedua dari Bpk. H.
                                             Abdul
                                             Hadi, S.Pd. & Ibu
@@ -275,9 +275,9 @@
                         <div class="text-center mx-auto px-4 animated wow fadeInUp" data-wow-delay="0.1s"
                             style="max-width: 600px;">
                             {{-- <img class="img-fluid w-50 mb-4" src="{{ asset('images/bismillah-png.png') }}"> --}}
-                            <h1 class="font-cinzel text-uppercase ls-2 font-25 mb-4 my-2 p-t-30 animated wow slideInLeft"
+                            <h1 class="ff-title animated wow slideInLeft"
                                 data-wow-delay="0.1s">Bismillah</h1>
-                            <p class="font-proxima-nova font-16 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Dan
+                            <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Dan
                                 di antara tanda-tanda (kebesaran)-Nya
                                 ialah Dia
                                 menciptakan
@@ -289,7 +289,7 @@
                                 terdapat
                                 tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
                             </p>
-                            <p class="font-proxima-nova font-16 animated wow slideInRight" data-wow-delay="0.1s">
+                            <p class="ff-description animated wow slideInRight" data-wow-delay="0.1s">
                                 <b>Ar-Rum: 21</b></p>
                         </div>
                         <div class="flex-col-c-m p-l-15 p-r-15 my-5">
@@ -351,17 +351,17 @@
                     <div class="row g-5 p-x-50">
                         <div class="col-12 col-lg-6 text-center wow fadeInUp" data-wow-delay="0.5s">
                             <div class="h-100">
-                                <h1 class="font-cinzel text-uppercase ls-2 font-25 mb-2 my-2 p-t-30">AKAD</h1>
+                                <h1 class="ff-title">AKAD</h1>
                                 <div class="d-flex justify-content-center">
-                                    <div class="col-9">
+                                    <div class="col-12 col-lg-9">
                                         <hr>
                                         <p class="font-cinzel text-uppercase font-16 mb-0 animated slideInLeft wow"
                                             data-wow-delay="0.1s">Sabtu, 11 Februari 2023</p>
                                         <p class="font-cinzel font-16 mb-0">Pukul 07.00 WIB</p>
                                         <hr>
-                                        <p class="font-now font-18 font-weight-600 mt-5">Masjid Nasional Al Akbar
+                                        <p class="ff-subtitle mt-5">Masjid Nasional Al Akbar
                                             Surabaya</p>
-                                        <p class="font-proxima-nova font-16 mb-0">Jl. Mesjid Agung Timur No.1,
+                                        <p class="ff-description mb-0">Jl. Mesjid Agung Timur No.1,
                                             Pagesangan, Kec. Jambangan, Kota Surabaya, Jawa Timur 60274</p>
                                     </div>
                                 </div>
@@ -369,18 +369,18 @@
                         </div>
                         <div class="col-12 col-lg-6 text-center wow fadeInUp" data-wow-delay="0.5s">
                             <div class="h-100">
-                                <h1 class="font-cinzel text-uppercase ls-2 font-25 mb-2 my-2 p-t-30">RESEPSI</h1>
+                                <h1 class="ff-title">RESEPSI</h1>
                                 <div class="d-flex justify-content-center">
-                                    <div class="col-9">
+                                    <div class="col-12 col-lg-9">
                                         <hr>
                                         <p class="font-cinzel text-uppercase font-16 mb-0 animated slideInLeft wow"
                                             data-wow-delay="0.1s">Sabtu, 11 Februari 2023</p>
                                         <p class="font-cinzel font-16 mb-0">Pukul 11.00 - 12.30 WIB</p>
                                         <hr>
-                                        <p class="font-now font-18 font-weight-600 mt-5">Grand Ballroom As Shofa</p>
-                                        <p class="font-proxima-nova font-16 mb-0">Masjid Nasional Al Akbar
+                                        <p class="ff-subtitle mt-5">Grand Ballroom As Shofa</p>
+                                        <p class="ff-description mb-0">Masjid Nasional Al Akbar
                                             Surabaya</p>
-                                        <p class="font-proxima-nova font-16 mb-0">Jl. Mesjid Agung Timur No.1,
+                                        <p class="ff-description mb-0">Jl. Mesjid Agung Timur No.1,
                                             Pagesangan, Kec. Jambangan, Kota Surabaya, Jawa Timur 60274</p>
                                     </div>
                                 </div>
@@ -390,9 +390,9 @@
                     <div class="row g-5 mt-2 p-x-50">
                         <div class="col-12 text-center wow fadeInUp">
                             {{-- <p class="font-now font-20 font-weight-600 mt-3">Grand Ballroom As Shofa</p>
-                            <p class="font-proxima-nova font-16 mb-0">Masjid Nasional Al Akbar
+                            <p class="ff-description mb-0">Masjid Nasional Al Akbar
                                 Surabaya</p>
-                            <p class="font-proxima-nova font-16 mb-0">Jl. Mesjid Agung Timur No.1,
+                            <p class="ff-description mb-0">Jl. Mesjid Agung Timur No.1,
                                 Pagesangan, Kec. Jambangan, Kota Surabaya, Jawa Timur 60274</p> --}}
                             <div class="col-12">
                                 <div class="flex-col-c-m p-t-30 wow fadeInUp" data-wow-delay="0.1s">
@@ -418,8 +418,8 @@
                         <div class="h-100">
                             <form id="rsvp" method="POST" action="/save-rsvp">
                                 @csrf
-                                <h1 class="font-cinzel text-uppercase ls-2 font-25 mb-2 my-2">BUKU TAMU</h1>
-                                <p class="font-proxima-nova font-16 my-5 text-center">Bapak/Ibu/Saudara/i
+                                <h1 class="ff-title">BUKU TAMU</h1>
+                                <p class="ff-description my-4 text-center">Bapak/Ibu/Saudara/i
                                     <b>{{ $name }}</b>, apakah Anda dapat hadir?
                                 </p>
                                 <div class="d-flex">
@@ -439,7 +439,7 @@
                                         placeholder="Karena..." rows="3"></textarea>
                                 </div>
                                 <div class="form-count" hidden>
-                                    <p class="font-proxima-nova font-16 mb-5 mt-3">Berapa orang yang akan hadir?
+                                    <p class="ff-description my-4">Berapa orang yang akan hadir?
                                         <select class="form-select form-select-lg mb-4 mt-3" id="rsvp_count" name="jumlah"
                                             aria-label="Select">
                                             <option selected>Select</option>
@@ -467,8 +467,8 @@
                         <img class="img-fluid rounded mb-4" src="{{ asset('images/logo2.png') }}"
                             style="width: 50px; height: 50px">
                     </h6>
-                    <h1 class="font-cinzel text-uppercase ls-2 font-25 mb-2 my-2">Protokol Kesehatan</h1>
-                    <p class="font-proxima-nova font-16 my-5">Tanpa mengurangi rasa hormat, dikarenakan situasi yang sedang
+                    <h1 class="ff-title">Protokol Kesehatan</h1>
+                    <p class="ff-description my-4">Tanpa mengurangi rasa hormat, dikarenakan situasi yang sedang
                         terjadi ditengah <b>pandemi Covid-19</b> ini kami memohon maaf karena acara akan diselenggarakan
                         sesuai
                         peraturan dan himbauan pemerintah.</p>
@@ -490,7 +490,7 @@
                         <img class="img-fluid rounded mb-4" src="{{ asset('images/logo2.png') }}"
                             style="width: 50px; height: 50px">
                     </h6>
-                    <h1 class="font-cinzel text-uppercase ls-2 font-25 mb-2 my-2">Galeri</h1>
+                    <h1 class="ff-title">Galeri</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -543,7 +543,7 @@
                         <div class="h-100">
                             <form id="message" method="POST" action="/save-rsvp">
                                 @csrf
-                                <h1 class="font-cinzel text-uppercase text-center ls-2 font-25 mb-5 my-2">Doa & Ucapan</h1>
+                                <h1 class="ff-title">Doa & Ucapan</h1>
                                 <input type="text" id="message_name" name="message_name" class="form-control"
                                     placeholder="Nama" required>
                                 <br>
@@ -555,7 +555,7 @@
                                     <textarea type="text" class="form-control" name="message_data" id="message_data" placeholder="Doa dan ucapan"
                                         rows="3" required></textarea>
                                 </div>
-                                <div style="text-align:center">
+                                <div class="text-center">
                                     <button type="submit" id="btn-submit" class="link-1"
                                         style="width:100%; border-radius:5px">Kirim</button>
                                 </div>
@@ -568,14 +568,14 @@
                                 <div class="wishes-box">
                                     @foreach ((array) $allMessages as $message)
                                         <div class="testimonial-item bg-light rounded p-4 mb-3">
-                                            <p class="font-now font-13 mb-2 pull-right">
+                                            <p class="date mb-2 pull-right">
                                                 {{ isset($message['timestamp']) ? date('d M Y, H:i', $message['timestamp']) : '' }}
                                             </p>
-                                            <h5 class="font-now font-15 mb-1">
+                                            <h5 class="name mb-1">
                                                 {{ ucwords($message['message_name']) ?? '' }}
                                             </h5>
-                                            <p class="font-now font-13 mb-2">{{ $message['message_from'] ?? '' }}</p>
-                                            <p class="font-proxima-nova font-15 mb-0"><?php echo nl2br($message['message_data']); ?></p>
+                                            <p class="from mb-2">{{ $message['message_from'] ?? '' }}</p>
+                                            <p class="message mb-0"><?php echo nl2br($message['message_data']); ?></p>
                                         </div>
                                     @endforeach
                                 </div>
@@ -599,8 +599,8 @@
                         src="{{ asset('images/logo.png') }}" alt="">
                     <div class="team-text">
                         <div class="team-title">
-                            <h1 class="font-dancing-script font-50 m-b-100">Terima Kasih</h1>
-                            <p class="font-proxima-nova font-12 mb-0">Created with love by <b>Fu</b> and
+                            <h1 class="ff-title-big m-b-100">Terima Kasih</h1>
+                            <p class="ff-footer mb-0">Created with love by <b>Fu</b> and
                                 <b>Fir</b> | Copyright 2023 <b>&copy; FFForever</b> <br> All Right
                                 Reserved.</p>
                         </div>
@@ -661,11 +661,6 @@
             <p id="tpl-message" class="font-proxima-nova font-12 mb-0"></p>
         </div>
         {{-- end wishes box message --}}
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-square back-to-top">
-            <i class="bi bi-arrow-up"></i>
-        </a>
 
         <!-- Music Start -->
         <div class="music-box hidden">
