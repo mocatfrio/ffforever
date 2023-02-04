@@ -14385,7 +14385,7 @@ label {
 .carousel-caption .line-1,
 .carousel-caption .date {
   font-family: "Cinzel";
-  font-size: calc(1.2rem + .3vw);
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.3125rem;
   color: var(--white);
@@ -14394,14 +14394,14 @@ label {
 
 .carousel-caption .line-2 {
   font-family: "DancingScript";
-  font-size: calc(5rem + .3vw);
+  font-size: 4.5rem;
   font-weight: 400;
   color: var(--white);
 }
 
 .carousel-caption .line-3 {
   font-family: "Niramit";
-  font-size: calc(1.2rem + .3vw);
+  font-size: 1.4rem;
   font-weight: 400;
   color: var(--white);
   padding-top: 3rem;
@@ -14409,7 +14409,7 @@ label {
 
 .carousel-caption .line-4 {
   font-family: "ProximaNova";
-  font-size: calc(1.2rem + .3vw);
+  font-size: 1.4rem;
   font-weight: 400;
   color: var(--white);
 }
@@ -14479,7 +14479,7 @@ label {
 .modalx-content-info .line-1,
 .modalx-content-info .date {
   font-family: "Cinzel";
-  font-size: calc(1.2rem + .3vw);
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.3125rem;
   color: var(--black);
@@ -14488,7 +14488,7 @@ label {
 
 .modalx-content-info .line-2 {
   font-family: "DancingScript";
-  font-size: calc(5rem + .3vw);
+  font-size: 4.5rem;
   font-weight: 400;
   color: var(--black);
 }
@@ -14496,7 +14496,7 @@ label {
 .modalx-content-info .line-3 {
   font-family: "Cinzel";
   font-weight: 400;
-  font-size: calc(1.2rem + .3vw);
+  font-size: 1.4rem;
   color: var(--black);
   letter-spacing: 1px;
 }
@@ -14504,7 +14504,7 @@ label {
 .modalx-content-info .name {
   font-family: "Cinzel";
   font-weight: 600;
-  font-size: calc(1.4rem + .3vw);
+  font-size: 1.6rem
 }
 
 .modalx-content-info hr {
@@ -14519,7 +14519,7 @@ label {
   padding: 0.9375rem 1.5625rem;
   box-shadow: none;
   margin: 0;
-  font-size: calc(1.2rem + .3vw);
+  font-size: 1.4rem;
   color: var(--light);
   background: var(--background);
   border-radius: 0.625rem;
