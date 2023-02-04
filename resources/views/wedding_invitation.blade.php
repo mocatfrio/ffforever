@@ -29,8 +29,8 @@
         <div class="modalx-content">
             <div class="modalx-content-info">
                 <div class="d-flex justify-content-center mb-2">
-                    <img class="modalx-logo non-draggable animated slideInDown wow"
-                        src="{{ asset('images/logo.png') }}" alt="logo" data-wow-delay="0.1s">
+                    <img class="modalx-logo non-draggable animated slideInDown wow" src="{{ asset('images/logo.png') }}"
+                        alt="logo" data-wow-delay="0.1s">
                 </div>
                 <h4 class="line-1 animated slideInLeft wow" data-wow-delay="0.1s">The
                     Wedding of</h4>
@@ -83,13 +83,14 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
+                                            acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -114,7 +115,8 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
+                                            acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
@@ -144,7 +146,8 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
+                                            acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
@@ -174,7 +177,8 @@
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-3 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri
+                                            acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
@@ -204,9 +208,11 @@
                     <div class="text-center mx-auto mb-5 px-4 wow fadeInUp" data-wow-delay="0.1s"
                         style="max-width: 600px;">
                         <h1 class="ff-title">We Are Getting Married!</h1>
-                        <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Apapun yang menjadi takdirmu, pasti akan mencari jalannya untuk menemukanmu."</p>
+                        <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Apapun yang
+                            menjadi takdirmu, pasti akan mencari jalannya untuk menemukanmu."</p>
                         <p class="ff-description-bold animated wow slideInRight" data-wow-delay="0.1s">
-                            <b>Ali bin Abi Thalib RA</b></p>
+                            <b>Ali bin Abi Thalib RA</b>
+                        </p>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
@@ -215,8 +221,8 @@
                                     src="{{ asset('images/hf.png') }}" alt="">
                                 <div class="team-text">
                                     <div class="team-title">
-                                        <h1 class="ff-title-secondary mb-4 wow slideInLeft"
-                                            data-wow-delay="0.2s">Hafara Firdausi, M.Kom.</h1>
+                                        <h1 class="ff-title-secondary mb-4 wow slideInLeft" data-wow-delay="0.2s">Hafara
+                                            Firdausi, M.Kom.</h1>
                                         <p class="ff-description mb-0 wow slideInLeft" data-wow-delay="0.2s">
                                             Putri Pertama dari Bpk. Prof.
                                             Dr. H. Wasis, M.Si.
@@ -241,8 +247,8 @@
                                     src="{{ asset('images/fd.png') }}" alt="">
                                 <div class="team-text">
                                     <div class="team-title">
-                                        <h1 class="ff-title-secondary mb-4 wow slideInRight"
-                                            data-wow-delay="0.3s">Fuad Dary Rosyadi, M.Kom.</h1>
+                                        <h1 class="ff-title-secondary mb-4 wow slideInRight" data-wow-delay="0.3s">Fuad
+                                            Dary Rosyadi, M.Kom.</h1>
                                         <p class="ff-description mb-0 wow slideInRight" data-wow-delay="0.3s">
                                             Putra Kedua dari Bpk. H.
                                             Abdul
@@ -250,8 +256,7 @@
                                             Hj.
                                             Siti Latifatin.</p>
                                     </div>
-                                    <div class="team-social mt-4 pointer wow slideInRight"
-                                        data-wow-delay="0.3s">
+                                    <div class="team-social mt-4 pointer wow slideInRight" data-wow-delay="0.3s">
                                         <a href="https://www.linkedin.com/in/fuaddary/" target="_blank"><i
                                                 class="fab fa-linkedin font-20 m-r-10 text-blue"></i></a>
                                         <a href="https://www.instagram.com/tinkerspace.dev/" target="_blank"><i
@@ -275,8 +280,7 @@
                         <div class="text-center mx-auto px-4 animated wow fadeInUp" data-wow-delay="0.1s"
                             style="max-width: 600px;">
                             {{-- <img class="img-fluid w-50 mb-4" src="{{ asset('images/bismillah-png.png') }}"> --}}
-                            <h1 class="ff-title animated wow slideInLeft"
-                                data-wow-delay="0.1s">Bismillah</h1>
+                            <h1 class="ff-title animated wow slideInLeft" data-wow-delay="0.1s">Bismillah</h1>
                             <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Dan
                                 di antara tanda-tanda (kebesaran)-Nya
                                 ialah Dia
@@ -290,30 +294,31 @@
                                 tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
                             </p>
                             <p class="ff-description animated wow slideInRight" data-wow-delay="0.1s">
-                                <b>Ar-Rum: 21</b></p>
+                                <b>Ar-Rum: 21</b>
+                            </p>
                         </div>
-                        <div class="flex-col-c-m p-l-15 p-r-15 my-5" style="text-align: -webkit-center;">
+                        <div class="flex-col-c-m my-5" style="text-align: -webkit-center;">
                             <div class="flex-w flex-c-m cd100">
                                 <div class="col">
-                                    <div class="flex-col-c-m circle m-2">
+                                    <div class="flex-col-c-m circle m-1">
                                         <span class="font-30 font-weight-600 text-pink days"></span>
                                         <span>Days</span>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="flex-col-c-m circle m-2">
+                                    <div class="flex-col-c-m circle m-1">
                                         <span class="font-30 font-weight-600 text-blue hours"></span>
                                         <span>Hours</span>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="flex-col-c-m circle m-2">
+                                    <div class="flex-col-c-m circle m-1">
                                         <span class="font-30 font-weight-600 text-pink minutes"></span>
                                         <span>Minutes</span>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="flex-col-c-m circle m-2">
+                                    <div class="flex-col-c-m circle m-1">
                                         <span class="font-30 font-weight-600 text-blue seconds"></span>
                                         <span>Seconds</span>
                                     </div>
@@ -440,8 +445,8 @@
                                 </div>
                                 <div class="form-count" hidden>
                                     <p class="ff-description mb-4">Berapa orang yang akan hadir?
-                                        <select class="form-select form-select-lg mb-5 mt-3" id="rsvp_count" name="jumlah"
-                                            aria-label="Select">
+                                        <select class="form-select form-select-lg mb-5 mt-3" id="rsvp_count"
+                                            name="jumlah" aria-label="Select">
                                             <option selected value="1">Satu</option>
                                             <option value="2">Dua</option>
                                         </select>
@@ -601,7 +606,8 @@
                             <h1 class="ff-title-big m-b-100">Terima Kasih</h1>
                             <p class="ff-footer mb-0">Created with love by <b>Fu</b> and
                                 <b>Fir</b> | Copyright 2023 <b>&copy; FFForever</b> <br> All Right
-                                Reserved.</p>
+                                Reserved.
+                            </p>
                         </div>
                     </div>
                 </div>
