@@ -73,7 +73,7 @@
                                     Wedding of</h4>
                                 <h1 class="line-2 mb-4 animated zoomIn">Firda
                                     & Fuad</h1>
-                                <div class="d-flex justify-content-center m-b-200">
+                                <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
                                         <hr>
                                         <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
@@ -104,7 +104,7 @@
                                     Wedding of</h4>
                                 <h1 class="line-2 mb-4 animated zoomIn">Firda
                                     & Fuad</h1>
-                                <div class="d-flex justify-content-center m-b-200">
+                                <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
                                         <hr>
                                         <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
@@ -134,7 +134,7 @@
                                     Wedding of</h4>
                                 <h1 class="line-2 mb-4 animated zoomIn">Firda
                                     & Fuad</h1>
-                                <div class="d-flex justify-content-center m-b-200">
+                                <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
                                         <hr>
                                         <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
@@ -164,7 +164,7 @@
                                     Wedding of</h4>
                                 <h1 class="line-2 mb-4 animated zoomIn">Firda
                                     & Fuad</h1>
-                                <div class="d-flex justify-content-center m-b-200">
+                                <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
                                         <hr>
                                         <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
@@ -324,9 +324,8 @@
                             <div class="atcb " style="display:none;">
                                 {
                                 "name":"Firda & Fuad Wedding",
-                                "description":"Kepada Yth. Kehadiran dan Do'a restu Bapak/Ibu/Saudara/i untuk acara
-                                pernikahan
-                                kami sangatlah berarti | Pernikahan Firda & Fuad | Sabtu, 11 Februari 2022",
+                                "description":"Kehadiran dan Do'a restu Bapak/Ibu/Saudara/i untuk acara
+                                pernikahan kami sangatlah berarti | Pernikahan Firda & Fuad | Sabtu, 11 Februari 2022",
                                 "startDate":"2023-02-11",
                                 "endDate":"2023-02-11",
                                 "startTime":"11:00",
@@ -474,7 +473,7 @@
                         sesuai
                         peraturan dan himbauan pemerintah.</p>
                     <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item d-block rounded text-center h-100" href="">
+                        <a class="service-item d-block rounded text-center h-100">
                             <img class="img-fluid rounded" src="{{ asset('images/protokol-kesehatan.jpeg') }}"
                                 alt="">
                         </a>
@@ -495,41 +494,41 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <div class="service-item d-block rounded text-center h-100 p-4">
                             <img class="img-fluid rounded non-draggable" src="{{ asset('images/foto13.png') }}"
                                 alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <div class="service-item d-block rounded text-center h-100 p-4">
                             <img class="img-fluid rounded non-draggable" src="{{ asset('images/foto5.png') }}"
                                 alt="">
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <div class="service-item d-block rounded text-center h-100 p-4">
                             <img class="img-fluid rounded non-draggable" src="{{ asset('images/foto11.png') }}"
                                 alt="">
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <div class="service-item d-block rounded text-center h-100 p-4">
                             <img class="img-fluid rounded non-draggable" src="{{ asset('images/foto14.JPG') }}"
                                 alt="">
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <div class="service-item d-block rounded text-center h-100 p-4">
                             <img class="img-fluid rounded non-draggable" src="{{ asset('images/foto8.png') }}"
                                 alt="">
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <div class="service-item d-block rounded text-center h-100 p-4">
                             <img class="img-fluid rounded non-draggable" src="{{ asset('images/foto9.png') }}"
                                 alt="">
                             {{-- <img class="img-fluid rounded non-draggable" src="{{ asset('images/foto10.png') }}" alt=""> --}}
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -569,14 +568,14 @@
                                 <div class="wishes-box">
                                     @foreach ((array) $allMessages as $message)
                                         <div class="testimonial-item bg-light rounded p-4 mb-3">
-                                            <p class="font-now font-14 mb-2 pull-right">
+                                            <p class="font-now font-13 mb-2 pull-right">
                                                 {{ isset($message['timestamp']) ? date('d M Y, H:i', $message['timestamp']) : '' }}
                                             </p>
-                                            <h5 class="font-now font-16 mb-1">
+                                            <h5 class="font-now font-15 mb-1">
                                                 {{ ucwords($message['message_name']) ?? '' }}
                                             </h5>
-                                            <p class="font-now font-14 mb-2">{{ $message['message_from'] ?? '' }}</p>
-                                            <p class="font-proxima-nova font-16 mb-0"><?php echo nl2br($message['message_data']); ?></p>
+                                            <p class="font-now font-13 mb-2">{{ $message['message_from'] ?? '' }}</p>
+                                            <p class="font-proxima-nova font-15 mb-0"><?php echo nl2br($message['message_data']); ?></p>
                                         </div>
                                     @endforeach
                                 </div>
@@ -600,7 +599,7 @@
                         src="{{ asset('images/logo.png') }}" alt="">
                     <div class="team-text">
                         <div class="team-title">
-                            <h1 class="font-dancing-script font-50 m-b-100">Terima Kasih</h1>
+                            <h1 class="font-dancing-script font-50">Terima Kasih</h1>
                             <p class="font-proxima-nova font-12 mb-0">Created with love by <b>Fu</b> and
                                 <b>Fir</b> | Copyright 2023 <b>&copy; FFForever</b> <br> All Right
                                 Reserved.</p>
@@ -735,6 +734,8 @@
         $(document).ready(function() {
             $('.atcb-icon').addClass('atcb-icon-1');
             $('.atcb-icon-1').removeClass('atcb-icon');
+            $('.atcb-checkmark').addClass('atcb-checkmark-1');
+            $('.atcb-checkmark-1').removeClass('atcb-checkmark');
 
             $('.open-top-cover').on('click', function(event) {
                 $('#top-cover').addClass('d-none');

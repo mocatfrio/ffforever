@@ -14193,7 +14193,7 @@ a:link {
 
 .link-1:hover,
 .link-1:focus {
-  transform: translateY(-.2rem);
+  transform: scale(1.1);
 }
 
 .link-2 {
