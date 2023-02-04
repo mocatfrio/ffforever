@@ -926,7 +926,7 @@ span {
 }
 
 .font-150 {
-  font-size: 150px;
+  font-size: 9.375rem;
 }
 
 .font-151 {
@@ -1726,7 +1726,7 @@ span {
 }
 
 .ws-150 {
-  word-spacing: 150px;
+  word-spacing: 9.375rem;
 }
 
 .ws-151 {
@@ -1946,7 +1946,7 @@ span {
 }
 
 .ls-5 {
-  letter-spacing: 5px;
+  letter-spacing: 0.3125rem;
 }
 
 .ls-6 {
@@ -2526,7 +2526,7 @@ span {
 }
 
 .ls-150 {
-  letter-spacing: 150px;
+  letter-spacing: 9.375rem;
 }
 
 .ls-151 {
@@ -9128,42 +9128,42 @@ span {
 
 .p-t-150,
 .p-y-150 {
-  padding-top: 150px !important;
+  padding-top: 9.375rem !important;
 }
 
 .p-b-150,
 .p-y-150 {
-  padding-bottom: 150px !important;
+  padding-bottom: 9.375rem !important;
 }
 
 .p-l-150,
 .p-x-150 {
-  padding-left: 150px !important;
+  padding-left: 9.375rem !important;
 }
 
 .p-r-150,
 .p-x-150 {
-  padding-right: 150px !important;
+  padding-right: 9.375rem !important;
 }
 
 .m-t-150,
 .m-y-150 {
-  margin-top: 150px !important;
+  margin-top: 9.375rem !important;
 }
 
 .m-b-150,
 .m-y-150 {
-  margin-bottom: 150px !important;
+  margin-bottom: 9.375rem !important;
 }
 
 .m-l-150,
 .m-x-150 {
-  margin-left: 150px !important;
+  margin-left: 9.375rem !important;
 }
 
 .m-r-150,
 .m-x-150 {
-  margin-right: 150px !important;
+  margin-right: 9.375rem !important;
 }
 
 .p-t-151,
@@ -14385,29 +14385,30 @@ label {
 .carousel-caption .line-1,
 .carousel-caption .date {
   font-family: "Cinzel";
-  font-size: calc(1.275rem + .3vw);
+  font-size: calc(1rem + .3vw);
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 0.3125rem;
   color: var(--white);
   text-transform: uppercase;
 }
 
 .carousel-caption .line-2 {
   font-family: "DancingScript";
-  font-size: 5rem;
+  font-size: calc(5rem + .3vw);
   color: var(--white);
 }
 
 .carousel-caption .line-3 {
   font-family: "Niramit";
-  font-size: calc(1.275rem + .3vw);
+  font-size: calc(1rem + .3vw);
   font-weight: 400;
   color: var(--white);
+  padding-top: 3rem;
 }
 
 .carousel-caption .line-4 {
   font-family: "ProximaNova";
-  font-size: calc(1.275rem + .3vw);
+  font-size: calc(1rem + .3vw);
   font-weight: 400;
   color: var(--white);
 }
@@ -14477,9 +14478,9 @@ label {
 .modalx-content-info .line-1,
 .modalx-content-info .date {
   font-family: "Cinzel";
-  font-size: calc(1.275rem + .3vw);
+  font-size: calc(1rem + .3vw);
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 0.3125rem;
   color: var(--black);
   text-transform: uppercase;
 }
@@ -14493,7 +14494,7 @@ label {
 .modalx-content-info .line-3 {
   font-family: "Cinzel";
   font-weight: 400;
-  font-size: calc(1.275rem + .3vw);
+  font-size: calc(1rem + .3vw);
   color: var(--black);
   letter-spacing: 1px;
 }
@@ -14501,7 +14502,7 @@ label {
 .modalx-content-info .name {
   font-family: "Cinzel";
   font-weight: 600;
-  font-size: calc(1.6rem + .3vw);
+  font-size: calc(1.4rem + .3vw);
 }
 
 .modalx-content-info hr {
@@ -14516,7 +14517,7 @@ label {
   padding: 0.9375rem 1.5625rem;
   box-shadow: none;
   margin: 0;
-  font-size: calc(1.275rem + .3vw);
+  font-size: calc(1rem + .3vw);
   color: var(--light);
   background: var(--background);
   border-radius: 0.625rem;
@@ -14546,7 +14547,7 @@ label {
 
 @media (max-width: 576px) {
   .modalx-logo {
-    width: 70%;
+    width: 50%;
     margin-bottom: 1.5rem;
   }
 

@@ -29,7 +29,7 @@
         <div class="modalx-content">
             <div class="modalx-content-info">
                 <div class="d-flex justify-content-center mb-2">
-                    <img class="modalx-logo m-b-50 non-draggable animated slideInDown wow"
+                    <img class="modalx-logo non-draggable animated slideInDown wow"
                         src="{{ asset('images/logo.png') }}" alt="logo" data-wow-delay="0.1s">
                 </div>
                 <h4 class="line-1 animated slideInLeft wow" data-wow-delay="0.1s">The
@@ -38,12 +38,12 @@
                     & Fuad</h1>
                 <div class="d-flex justify-content-center m-b-40">
                     <div class="col-lg-6 col-11">
-                        <hr>
-                        <p class="date animated slideInLeft wow" data-wow-delay="0.1s">Sabtu, 11 Februari 2023</p>
-                        <hr>
+                        <hr class="mb-2">
+                        <p class="date mb-0 animated slideInLeft wow" data-wow-delay="0.1s">Sabtu, 11 Februari 2023</p>
+                        <hr class="mt-2">
                     </div>
                 </div>
-                <p class="line-3 animated zoomIn wow" data-wow-delay="0.1s">Yth. Bapak/Ibu/Saudara/i
+                <p class="line-3 mb-1 animated zoomIn wow" data-wow-delay="0.1s">Yth. Bapak/Ibu/Saudara/i
                 </p>
                 <h3 class="name m-b-40 animated zoomIn wow" data-wow-delay="0.1s">{{ $name }}</h3>
                 <div class="d-flex justify-content-center m-b-30">
@@ -72,18 +72,18 @@
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
-                                        <hr>
-                                        <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
-                                        <hr>
+                                        <hr class="mb-2">
+                                        <p class="date mb-0animated zoomIn">Sabtu, 11 Februari 2023</p>
+                                        <hr class="mt-2">
                                     </div>
                                 </div>
-                                <p class="line-3 p-t-50 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
+                                <p class="line-3 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
                                 </p>
                                 <h3 class="name m-b-40 animated zoomIn">{{ $name }}</h3>
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
@@ -103,18 +103,18 @@
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
-                                        <hr>
-                                        <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
-                                        <hr>
+                                        <hr class="mb-2">
+                                        <p class="date mb-0animated zoomIn">Sabtu, 11 Februari 2023</p>
+                                        <hr class="mt-2">
                                     </div>
                                 </div>
-                                <p class="line-3 p-t-50 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
+                                <p class="line-3 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
                                 </p>
                                 <h3 class="name m-b-40 animated zoomIn">{{ $name }}</h3>
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
@@ -133,18 +133,18 @@
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
-                                        <hr>
-                                        <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
-                                        <hr>
+                                        <hr class="mb-2">
+                                        <p class="date mb-0animated zoomIn">Sabtu, 11 Februari 2023</p>
+                                        <hr class="mt-2">
                                     </div>
                                 </div>
-                                <p class="line-3 p-t-50 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
+                                <p class="line-3 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
                                 </p>
                                 <h3 class="name m-b-40 animated zoomIn">{{ $name }}</h3>
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
@@ -163,18 +163,18 @@
                                     & Fuad</h1>
                                 <div class="d-flex justify-content-center m-b-150">
                                     <div class="col-lg-8 col-11">
-                                        <hr>
-                                        <p class="date animated zoomIn">Sabtu, 11 Februari 2023</p>
-                                        <hr>
+                                        <hr class="mb-2">
+                                        <p class="date mb-0animated zoomIn">Sabtu, 11 Februari 2023</p>
+                                        <hr class="mt-2">
                                     </div>
                                 </div>
-                                <p class="line-3 p-t-50 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
+                                <p class="line-3 animated zoomIn">Yth. Bapak/Ibu/Saudara/i
                                 </p>
                                 <h3 class="name m-b-40 animated zoomIn">{{ $name }}</h3>
                                 <div class="d-flex justify-content-center m-t-20">
                                     <div class="col-lg-8 col-11">
                                         <hr>
-                                        <p class="line-3 px-5 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
+                                        <p class="line-3 px-5 pt-0 animated zoomIn">Kami mengundang Anda untuk menghadiri acara resepsi
                                             pernikahan
                                             kami</p>
                                         <hr>
