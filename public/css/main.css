@@ -14615,8 +14615,8 @@ label {
 
 #main-content .form-control,
 #main-content .form-select {
-  padding: 1.25rem 1.25rem;
-  font-size: 1.3rem;
+  padding: 2rem 1.25rem;
+  font-size: 1.4rem;
   border-color: var(--dark-blue);
   color: var(--black);
 }

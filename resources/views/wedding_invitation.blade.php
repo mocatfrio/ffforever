@@ -543,7 +543,7 @@
                         <div class="h-100">
                             <form id="message" method="POST" action="/save-rsvp">
                                 @csrf
-                                <h1 class="ff-title">Doa & Ucapan</h1>
+                                <h1 class="ff-title mt-0 mb-5">Doa & Ucapan</h1>
                                 <input type="text" id="message_name" name="message_name" class="form-control"
                                     placeholder="Nama" required>
                                 <br>
