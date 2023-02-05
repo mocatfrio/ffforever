@@ -203,12 +203,8 @@
                 <div class="container">
                     <div class="text-center mx-auto mb-5 px-4 wow fadeInUp" data-wow-delay="0.1s"
                         style="max-width: 600px;">
-                        <h1 class="ff-title">We Are Getting Married!</h1>
-                        <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Apapun yang
-                            menjadi takdirmu, pasti akan mencari jalannya untuk menemukanmu."</p>
-                        <p class="ff-description-bold animated wow slideInRight" data-wow-delay="0.1s">
-                            <b>Ali bin Abi Thalib RA</b>
-                        </p>
+                        <h1 class="ff-title">Assalamu’alaikum Wr. Wb.</h1>
+                        <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala, insyaaAllah kami akan menyelenggarakan acara pernikahan :</p>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
@@ -352,7 +348,7 @@
                     <div class="row g-5 p-x-50">
                         <div class="col-12 col-lg-6 text-center wow fadeInUp" data-wow-delay="0.5s">
                             <div class="h-100">
-                                <h1 class="ff-title">AKAD</h1>
+                                <h1 class="ff-title">AKAD NIKAH</h1>
                                 <div class="d-flex justify-content-center mb-5">
                                     <div class="col-12 col-lg-9">
                                         <hr>
@@ -491,6 +487,11 @@
                             style="width: 50px; height: 50px">
                     </h6>
                     <h1 class="ff-title">Galeri</h1>
+                    <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">"Apapun yang
+                        menjadi takdirmu, pasti akan mencari jalannya untuk menemukanmu."</p>
+                    <p class="ff-description-bold animated wow slideInRight" data-wow-delay="0.1s">
+                        <b>Ali bin Abi Thalib RA</b>
+                    </p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -594,12 +595,15 @@
                     <h6 class="bg-white">
                         <img class="img-fluid rounded mb-4" src="{{ asset('images/logo2.png') }}"
                             style="width: 30px; height: 30px">
+                        <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">Atas kehadiran dan do’a restu dari Bapak/Ibu/Saudara/i sekalian, kami mengucapkan Terima Kasih.</p>
+                        <h1 class="ff-title m-b-50">Wassalamu’alaikum Wr. Wb.</h1>
                     </h6>
                     <img class="img-fluid rounded-circle w-50 p-2 mb-4 non-draggable"
                         src="{{ asset('images/logo.png') }}" alt="">
                     <div class="team-text">
                         <div class="team-title">
-                            <h1 class="ff-title-big m-b-100">Terima Kasih</h1>
+                            <p class="ff-description mt-4 mb-2 animated wow slideInRight" data-wow-delay="0.1s">Kami yang berbahagia,</p>
+                            <h1 class="ff-title-big m-b-100">Firda & Fuad</h1>
                             <p class="ff-footer mb-0">Created with ❤ by <b>Fu</b> and
                                 <b>Fir</b> | Copyright 2023 <b>&copy; FFForever</b> <br> All Right
                                 Reserved.
