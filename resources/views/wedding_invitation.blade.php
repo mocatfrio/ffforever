@@ -665,7 +665,7 @@
         <div class="music-box hidden">
             <input type="checkbox" id="music">
             <label class="music" for="music"></label>
-            <audio id="player">
+            <audio id="player" loop>
                 <source src="{{ asset('music/canon-in-d-memories.mp3') }}" type="audio/mpeg" />
             </audio>
         </div>
